@@ -1,0 +1,11 @@
+14:15:29 **** Incremental Build of configuration debug for project NetworksProject ****
+make MODE=debug all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+Node0.cc
+Node1.cc
+Creating executable: ../out/clang-debug/src/NetworksProject_dbg.exe
+make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+
+14:15:32 Build Finished. 0 errors, 0 warnings. (took 3s.194ms)
+

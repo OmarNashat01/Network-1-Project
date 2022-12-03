@@ -1,0 +1,3 @@
+package networksproject;
+
+@license(LGPL);
