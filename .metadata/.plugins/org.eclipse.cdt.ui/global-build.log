@@ -1,223 +1,177 @@
-11:37:01 **** Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
+13:00:54 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
 cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-MSGC: Message.msg
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+13:00:59 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+13:02:42 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+16:58:55 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
 coordinator.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+16:59:04 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+17:00:18 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+17:09:41 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
 Node0.cc
-Node1.cc
-Message_m.cc
-In file included from Message_m.cc:29:
-./Message_m.h:22:10: fatal error: 'SomeType.h' file not found
-#include "SomeType.h"
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+17:12:53 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+17:15:06 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+17:19:38 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+17:21:40 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+17:23:51 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:17:10: fatal error: 'filesystem' file not found
+#include <filesystem>
          ^~~~~~~~~~~~
-1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-debug/src/Message_m.o] Error 1
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
 make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-12:50:18 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+17:27:41 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
 cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
 coordinator.cc
-coordinator.cc:25:19: error: out-of-line definition of 'readInputFile' does not match any declaration in 'Coordinator'
-void Coordinator::readInputFile(int &Node_id, float &starting_time)
-                  ^~~~~~~~~~~~~
-coordinator.cc:49:19: error: too many arguments to function call, expected 0, have 2
-    readInputFile(Node_id, starting_time);
-    ~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~
-./coordinator.h:29:5: note: 'readInputFile' declared here
-    void readInputFile();
-    ^
-2 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-debug/src/coordinator.o] Error 1
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-12:51:20 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:25:19: error: out-of-line definition of 'readInputFile' does not match any declaration in 'Coordinator'
-void Coordinator::readInputFile(int &Node_id, float &starting_time)
-                  ^~~~~~~~~~~~~
-coordinator.cc:49:19: error: too many arguments to function call, expected 0, have 2
-    readInputFile(Node_id, starting_time);
-    ~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~
-./coordinator.h:29:5: note: 'readInputFile' declared here
-    void readInputFile();
-    ^
-2 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-debug/src/coordinator.o] Error 1
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-12:51:28 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-coordinator.cc
-Node0.cc
-Node0.cc:21:8: error: unknown type name 'boolean'
-static boolean between(int a, int b, int c)
-       ^
-Node0.cc:23:17: warning: '&&' within '||' [-Wlogical-op-parentheses]
-    if (((a<=b) && (b<c) || ((c<a) && (a<=b)) || ((b<c) && (c<a)))
-         ~~~~~~~^~~~~~~~ ~~
-Node0.cc:23:17: note: place parentheses around the '&&' expression to silence this warning
-    if (((a<=b) && (b<c) || ((c<a) && (a<=b)) || ((b<c) && (c<a)))
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
                 ^
-         (              )
-Node0.cc:24:9: error: expected ')'
-        return true;
-        ^
-Node0.cc:23:8: note: to match this '('
-    if (((a<=b) && (b<c) || ((c<a) && (a<=b)) || ((b<c) && (c<a)))
-       ^
-1 warning and 2 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-debug/src/Node0.o] Error 1
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-12:52:24 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+1 warning generated.
 Node0.cc
-MSGC: Message.msg
-Message_m.cc
-Creating executable: ../out/clang-debug/src/NetworksProject_dbg.exe
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-13:13:46 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+17:36:57 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
 cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
 coordinator.cc
-Node0.cc
-Node0.cc:24:6: error: ISO C++ forbids forward references to 'enum' types
-enum event_type (frame_arrival, cksum_err, timeout, network_layer_ready);
-     ^
-Node0.cc:24:31: error: expected ')'
-enum event_type (frame_arrival, cksum_err, timeout, network_layer_ready);
-                              ^
-Node0.cc:24:17: note: to match this '('
-enum event_type (frame_arrival, cksum_err, timeout, network_layer_ready);
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
                 ^
-Node0.cc:24:18: error: variable has incomplete type 'enum event_type'
-enum event_type (frame_arrival, cksum_err, timeout, network_layer_ready);
-                 ^
-Node0.cc:24:6: note: forward declaration of 'event_type'
-enum event_type (frame_arrival, cksum_err, timeout, network_layer_ready);
-     ^
-Node0.cc:45:24: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
-    if (msg->getName() == "Coordinator")
-                       ^  ~~~~~~~~~~~~~
-1 warning and 3 errors generated.
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-make[1]: *** [Makefile:105: ../out/clang-debug/src/Node0.o] Error 1
-make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-13:18:48 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-Node0.cc
-Node0.cc:44:9: error: no matching function for call to 'strncmp'
-    if (strncmp(msg->getName(),"Coordinator") == 0)
-        ^~~~~~~
-C:\omnetpp\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\string.h:86:15: note: candidate function not viable: requires 3 arguments, but 2 were provided
-  int __cdecl strncmp(const char *_Str1,const char *_Str2,size_t _MaxCount);
-              ^
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-debug/src/Node0.o] Error 1
-make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-13:54:08 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-Node0.cc
-Creating executable: ../out/clang-debug/src/NetworksProject_dbg.exe
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-14:12:18 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-Node0.cc
-Node0.cc:43:12: error: use of undeclared identifier 'out'
-    send(s,out);
-           ^
-Node0.cc:44:5: error: use of undeclared identifier 'start_timer'
-    start_timer(frame_nr); //need to implement start_timer
+coordinator.cc:57:36: error: no matching constructor for initialization of 'Message'
+    Message *coordinator_msg1= new Message(coordinator_msg);
+                                   ^       ~~~~~~~~~~~~~~~
+./Message_m.h:56:5: note: candidate constructor not viable: no known conversion from 'Message *' to 'const Message' for 1st argument; dereference the argument with *
+    Message(const Message& other);
     ^
-Node0.cc:60:13: error: use of undeclared identifier 'flag'; did you mean 'flags'?
-            flag = 1;
-            ^~~~
-            flags
-C:/omnetpp/omnetpp-5.6.2/include/omnetpp/cnamedobject.h:42:20: note: 'flags' declared here
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-    unsigned short flags;  // FL_NAMEPOOLING flag; other bits used by derived classes
-                   ^
-3 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-debug/src/Node0.o] Error 1
-make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-14:12:41 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-Node0.cc
-Node0.cc:43:12: error: use of undeclared identifier 'out'
-    send(s,out);
-           ^
-Node0.cc:44:5: error: use of undeclared identifier 'start_timer'
-    start_timer(frame_nr); //need to implement start_timer
+./Message_m.h:55:5: note: candidate constructor not viable: no known conversion from 'Message *' to 'const char *' for 1st argument
+    Message(const char *name=nullptr, short kind=0);
     ^
-2 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-debug/src/Node0.o] Error 1
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+1 warning and 1 error generated.
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
 make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-14:13:04 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+17:37:43 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
 cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-Node0.cc
-Node0.cc:43:12: error: use of undeclared identifier 'out'
-    send(s,out);
-           ^
-Node0.cc:44:5: error: use of undeclared identifier 'start_timer'
-    start_timer(frame_nr); //need to implement start_timer
-    ^
-2 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-debug/src/Node0.o] Error 1
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:57:47: error: member reference type 'Message *' is a pointer; did you mean to use '->'?
+    Message *coordinator_msg1= coordinator_msg.dup();
+                               ~~~~~~~~~~~~~~~^
+                                              ->
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
 make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-14:13:11 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+17:38:09 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
 cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
 Node0.cc
-Node0.cc:43:5: error: no matching function for call to 'send'
-    send(s,"out");
-    ^~~~
-C:\omnetpp\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\winsock2.h:997:34: note: candidate function not viable: requires 4 arguments, but 2 were provided
-  WINSOCK_API_LINKAGE int WSAAPI send(SOCKET s,const char *buf,int len,int flags);
-                                 ^
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-debug/src/Node0.o] Error 1
-make: *** [Makefile:2: all] Error 2
-"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
-14:15:29 **** Incremental Build of configuration debug for project NetworksProject ****
-make MODE=debug all 
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+17:39:16 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
 cd src && /usr/bin/make
-make[1]: Entering directory '/d/Senior 1/Networks/Project/NetworksProject/src'
-Node0.cc
-Node1.cc
-Creating executable: ../out/clang-debug/src/NetworksProject_dbg.exe
-make[1]: Leaving directory '/d/Senior 1/Networks/Project/NetworksProject/src'
+make[1]: Entering directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/ranaa/Senior-1/1st/Networks/Network-1-Project/NetworksProject/src'

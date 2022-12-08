@@ -2,6 +2,13 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="org.omnetpp.cdt.gnu.config.debug.502816598">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="C:/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../include/c++/7.1.0"/>
+<includePath path="C:/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../include/c++/7.1.0/x86_64-w64-mingw32"/>
+<includePath path="C:/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../include/c++/7.1.0/backward"/>
+<includePath path="C:/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include"/>
+<includePath path="C:/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../include"/>
+<includePath path="C:/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
+<includePath path="C:/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
 <includePath path="C:/omnetpp/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../include/c++/7.1.0"/>
 <includePath path="C:/omnetpp/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../include/c++/7.1.0/x86_64-w64-mingw32"/>
 <includePath path="C:/omnetpp/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../include/c++/7.1.0/backward"/>
@@ -10,6 +17,7 @@
 <includePath path="C:/omnetpp/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/include-fixed"/>
 <includePath path="C:/omnetpp/omnetpp-5.6.2/tools/win64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.1.0/../../../../x86_64-w64-mingw32/include"/>
 <includePath path="C:\omnetpp\omnetpp-5.6.2\include"/>
+<includePath path="C:\omnetpp-5.6.2\include"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__cplusplus=201402L"/>
 <definedSymbol symbol="__STDC_UTF_16__=1"/>

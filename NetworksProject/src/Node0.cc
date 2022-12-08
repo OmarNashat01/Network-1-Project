@@ -15,26 +15,45 @@
 
 #include "Node0.h"
 using namespace std;
-#include <iostream>
-#include "string.h"
-#include <bitset>
-#include <vector>
-#include "Message_m.h"
+
 #define MAX_SEQ 5
 
-enum {frame_arrival, cksum_err, timeout, network_layer_ready};
+
 
 //int event_type;
 
 Define_Module(Node0);
 
-bool between(int a, int b, int c)
+void Node0::initialize()
+{
+    // TODO - Generated method body
+    isSender = 0;
+    wStart = 0;
+    wSize = 5;
+    wEnd = wStart + wSize;
+    filenames[0] = "../msgs.txt";
+    filenames[1] = "../msgs.txt";
+
+}
+
+bool between(int ack)
 {
     //because seq_nr is incremented circularly
-    if (((a<=b) && (b<c)) || ((c<a) && (a<=b)) || ((b<c) && (c<a)))
+    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
         return true;
     else
         return false;
+}
+
+bool canRead()                          //checks if window has available space
+{
+    if(!isSender()) return false;
+    else
+    {
+        //TODO
+        return true;
+    }
+
 }
 
 void Node0::send_data(int frame_nr, int frame_expected, char data[])
@@ -45,26 +64,72 @@ void Node0::send_data(int frame_nr, int frame_expected, char data[])
     //s->setAck_nr((frame_expected+MAX_SEQ)%(MAX_SEQ+1)); //No piggybacking
     send(s,"out");
     //scheduleAt(simTime()+interval, s);
+
     //start_timer(frame_nr); //need to implement start_timer
 }
 
-
-void Node0::initialize()
+string Node0::getNextMsg()
 {
-    // TODO - Generated method body
+    string line;
+    inFile >> line;
+
+    cout << line << endl;
+    return line;
 }
+
 
 void Node0::handleMessage(cMessage *msg)
 {
-    if (strcmp(msg->getName(),"Coordinator") == 0)
-    {
-        Message *coordinator_msg = check_and_cast<Message *>(msg);
-        if (coordinator_msg->getHeader() == 0)
+
+    Message *mymsg = check_and_cast<Message *>(msg);
+
+    int frame_type = mymsg->getFrame_type();
+    double delay = 0;
+
+    switch (frame_type){
+        case intialization:
         {
-            flag = 1;
-            //set starting time
+            if (mymsg->getNodeInd() == getIndex()){             //detect the sending node
+                inFile.open(filenames[mymsg->getNodeInd()]);
+                isSender = 1 ;
+                delay = mymsg->getStartTime();
+            }
+            break;
         }
+        case frame_arrival:
+        {
+            // TODO: Implement
+            break;
+        }
+        case cksum_err:
+        {
+            //TODO: impelent
+            break;
+        }
+        case timeout:
+        {
+            // TODO: implement
+            break;
+        }
+//        case network_layer_ready:
+//        {
+//            // TODO: implement
+//            break;
+//        }
     }
+
+
+
+//    if (strcmp(msg->getName(),"Coordinator") == 0)
+//    {
+//        Message *coordinator_msg = check_and_cast<Message *>(msg);
+//        if (coordinator_msg->getHeader() == 0)
+//        {
+//            flag = 1;
+//            //set starting time
+//        }
+//    }
+
     //if sender(flag=1) implement the sender protocol, else receiver protocol
 
 }

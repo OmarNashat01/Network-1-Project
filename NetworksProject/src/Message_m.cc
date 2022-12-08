@@ -182,6 +182,8 @@ Register_Class(Message)
 Message::Message(const char *name, short kind) : ::omnetpp::cPacket(name,kind)
 {
     this->header = 0;
+    this->nodeInd = 0;
+    this->startTime = 0;
     this->trailer = 0;
     this->frame_type = 0;
     this->ack_nr = 0;
@@ -207,6 +209,8 @@ Message& Message::operator=(const Message& other)
 void Message::copy(const Message& other)
 {
     this->header = other.header;
+    this->nodeInd = other.nodeInd;
+    this->startTime = other.startTime;
     this->payload = other.payload;
     this->trailer = other.trailer;
     this->frame_type = other.frame_type;
@@ -217,6 +221,8 @@ void Message::parsimPack(omnetpp::cCommBuffer *b) const
 {
     ::omnetpp::cPacket::parsimPack(b);
     doParsimPacking(b,this->header);
+    doParsimPacking(b,this->nodeInd);
+    doParsimPacking(b,this->startTime);
     doParsimPacking(b,this->payload);
     doParsimPacking(b,this->trailer);
     doParsimPacking(b,this->frame_type);
@@ -227,6 +233,8 @@ void Message::parsimUnpack(omnetpp::cCommBuffer *b)
 {
     ::omnetpp::cPacket::parsimUnpack(b);
     doParsimUnpacking(b,this->header);
+    doParsimUnpacking(b,this->nodeInd);
+    doParsimUnpacking(b,this->startTime);
     doParsimUnpacking(b,this->payload);
     doParsimUnpacking(b,this->trailer);
     doParsimUnpacking(b,this->frame_type);
@@ -241,6 +249,26 @@ int Message::getHeader() const
 void Message::setHeader(int header)
 {
     this->header = header;
+}
+
+int Message::getNodeInd() const
+{
+    return this->nodeInd;
+}
+
+void Message::setNodeInd(int nodeInd)
+{
+    this->nodeInd = nodeInd;
+}
+
+int Message::getStartTime() const
+{
+    return this->startTime;
+}
+
+void Message::setStartTime(int startTime)
+{
+    this->startTime = startTime;
 }
 
 const char * Message::getPayload() const
@@ -348,7 +376,7 @@ const char *MessageDescriptor::getProperty(const char *propertyname) const
 int MessageDescriptor::getFieldCount() const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
-    return basedesc ? 5+basedesc->getFieldCount() : 5;
+    return basedesc ? 7+basedesc->getFieldCount() : 7;
 }
 
 unsigned int MessageDescriptor::getFieldTypeFlags(int field) const
@@ -365,8 +393,10 @@ unsigned int MessageDescriptor::getFieldTypeFlags(int field) const
         FD_ISEDITABLE,
         FD_ISEDITABLE,
         FD_ISEDITABLE,
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
     };
-    return (field>=0 && field<5) ? fieldTypeFlags[field] : 0;
+    return (field>=0 && field<7) ? fieldTypeFlags[field] : 0;
 }
 
 const char *MessageDescriptor::getFieldName(int field) const
@@ -379,12 +409,14 @@ const char *MessageDescriptor::getFieldName(int field) const
     }
     static const char *fieldNames[] = {
         "header",
+        "nodeInd",
+        "startTime",
         "payload",
         "trailer",
         "frame_type",
         "ack_nr",
     };
-    return (field>=0 && field<5) ? fieldNames[field] : nullptr;
+    return (field>=0 && field<7) ? fieldNames[field] : nullptr;
 }
 
 int MessageDescriptor::findField(const char *fieldName) const
@@ -392,10 +424,12 @@ int MessageDescriptor::findField(const char *fieldName) const
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     int base = basedesc ? basedesc->getFieldCount() : 0;
     if (fieldName[0]=='h' && strcmp(fieldName, "header")==0) return base+0;
-    if (fieldName[0]=='p' && strcmp(fieldName, "payload")==0) return base+1;
-    if (fieldName[0]=='t' && strcmp(fieldName, "trailer")==0) return base+2;
-    if (fieldName[0]=='f' && strcmp(fieldName, "frame_type")==0) return base+3;
-    if (fieldName[0]=='a' && strcmp(fieldName, "ack_nr")==0) return base+4;
+    if (fieldName[0]=='n' && strcmp(fieldName, "nodeInd")==0) return base+1;
+    if (fieldName[0]=='s' && strcmp(fieldName, "startTime")==0) return base+2;
+    if (fieldName[0]=='p' && strcmp(fieldName, "payload")==0) return base+3;
+    if (fieldName[0]=='t' && strcmp(fieldName, "trailer")==0) return base+4;
+    if (fieldName[0]=='f' && strcmp(fieldName, "frame_type")==0) return base+5;
+    if (fieldName[0]=='a' && strcmp(fieldName, "ack_nr")==0) return base+6;
     return basedesc ? basedesc->findField(fieldName) : -1;
 }
 
@@ -409,12 +443,14 @@ const char *MessageDescriptor::getFieldTypeString(int field) const
     }
     static const char *fieldTypeStrings[] = {
         "int",
+        "int",
+        "int",
         "string",
         "char",
         "int",
         "int",
     };
-    return (field>=0 && field<5) ? fieldTypeStrings[field] : nullptr;
+    return (field>=0 && field<7) ? fieldTypeStrings[field] : nullptr;
 }
 
 const char **MessageDescriptor::getFieldPropertyNames(int field) const
@@ -482,10 +518,12 @@ std::string MessageDescriptor::getFieldValueAsString(void *object, int field, in
     Message *pp = (Message *)object; (void)pp;
     switch (field) {
         case 0: return long2string(pp->getHeader());
-        case 1: return oppstring2string(pp->getPayload());
-        case 2: return long2string(pp->getTrailer());
-        case 3: return long2string(pp->getFrame_type());
-        case 4: return long2string(pp->getAck_nr());
+        case 1: return long2string(pp->getNodeInd());
+        case 2: return long2string(pp->getStartTime());
+        case 3: return oppstring2string(pp->getPayload());
+        case 4: return long2string(pp->getTrailer());
+        case 5: return long2string(pp->getFrame_type());
+        case 6: return long2string(pp->getAck_nr());
         default: return "";
     }
 }
@@ -501,10 +539,12 @@ bool MessageDescriptor::setFieldValueAsString(void *object, int field, int i, co
     Message *pp = (Message *)object; (void)pp;
     switch (field) {
         case 0: pp->setHeader(string2long(value)); return true;
-        case 1: pp->setPayload((value)); return true;
-        case 2: pp->setTrailer(string2long(value)); return true;
-        case 3: pp->setFrame_type(string2long(value)); return true;
-        case 4: pp->setAck_nr(string2long(value)); return true;
+        case 1: pp->setNodeInd(string2long(value)); return true;
+        case 2: pp->setStartTime(string2long(value)); return true;
+        case 3: pp->setPayload((value)); return true;
+        case 4: pp->setTrailer(string2long(value)); return true;
+        case 5: pp->setFrame_type(string2long(value)); return true;
+        case 6: pp->setAck_nr(string2long(value)); return true;
         default: return false;
     }
 }

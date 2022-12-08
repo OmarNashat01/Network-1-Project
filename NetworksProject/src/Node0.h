@@ -17,8 +17,10 @@
 #define __NETWORKSPROJECT_NODE0_H_
 
 #include <omnetpp.h>
+#include "global.h"
 
 using namespace omnetpp;
+using namespace std;
 
 /**
  * TODO - Generated class
@@ -27,8 +29,16 @@ class Node0 : public cSimpleModule
 {
   protected:
     int flag;
+    ifstream inFile;
+    bool isSender;
+    int wStart, wEnd, wSize;
+    string filenames[2];
+
+
+    int startTime;
     void send_data(int frame_nr, int frame_expected, char data[]);
     virtual void initialize();
+    string getNextMsg();
     virtual void handleMessage(cMessage *msg);
 };
 

@@ -13,12 +13,10 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-#include <iostream>
-#include <fstream>
-#include <string.h>
 using namespace std;
 #include "coordinator.h"
-#include "Message_m.h"
+
+
 
 Define_Module(Coordinator);
 
@@ -26,7 +24,7 @@ void Coordinator::readInputFile(int &Node_id, float &starting_time)
 {
     ifstream myfile;
     char temp;
-    myfile.open("coordinator.txt");
+    myfile.open("../coordinator.txt");
     if (myfile.is_open())
     {
         if (myfile)
@@ -47,11 +45,17 @@ void Coordinator::initialize()
     int Node_id;
     float starting_time;
     readInputFile(Node_id, starting_time);
+
     Message *coordinator_msg= new Message("Coordinator"); //set message name as "Coordinator"
-    coordinator_msg->setHeader(Node_id); //send Node_id in header
-    coordinator_msg->setAck_nr(starting_time); //send starting_time in ack_nr
+    coordinator_msg->setFrame_type(intialization);
+    coordinator_msg->setNodeInd(Node_id);
+    coordinator_msg->setStartTime(starting_time);
+
+
     send(coordinator_msg, "out0");
-    send(coordinator_msg, "out1");
+
+    Message *coordinator_msg1= coordinator_msg->dup();
+    send(coordinator_msg1, "out1");
 }
 
 void Coordinator::handleMessage(cMessage *msg)

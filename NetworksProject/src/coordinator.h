@@ -17,6 +17,7 @@
 #define __NETWORKSPROJECT_COORDINATOR_H_
 
 #include <omnetpp.h>
+#include "global.h"
 
 using namespace omnetpp;
 

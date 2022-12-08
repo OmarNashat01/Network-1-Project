@@ -21,6 +21,7 @@ package networksproject;
 simple Node0
 {
     gates:
+        input inC;
         input in;
         output out;
 }
