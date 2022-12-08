@@ -23,12 +23,14 @@
  * <pre>
  * packet Message
  * {
- *     int header; //data sequence number 
  *     int nodeInd;// index of the node in initialization
  *     int startTime; // start timer in initialization
+ * 
+ *     int header; //data sequence number 
  *     string payload; //payload with byte stuffing (flag=$ , Escape=/)
  *     char trailer; //parity byte
  *     int frame_type; //Data=0,ACK=1,NACK=2
+ * 
  *     int ack_nr;
  * }
  * </pre>
@@ -36,9 +38,9 @@
 class Message : public ::omnetpp::cPacket
 {
   protected:
-    int header;
     int nodeInd;
     int startTime;
+    int header;
     ::omnetpp::opp_string payload;
     char trailer;
     int frame_type;
@@ -61,12 +63,12 @@ class Message : public ::omnetpp::cPacket
     virtual void parsimUnpack(omnetpp::cCommBuffer *b) override;
 
     // field getter/setter methods
-    virtual int getHeader() const;
-    virtual void setHeader(int header);
     virtual int getNodeInd() const;
     virtual void setNodeInd(int nodeInd);
     virtual int getStartTime() const;
     virtual void setStartTime(int startTime);
+    virtual int getHeader() const;
+    virtual void setHeader(int header);
     virtual const char * getPayload() const;
     virtual void setPayload(const char * payload);
     virtual char getTrailer() const;

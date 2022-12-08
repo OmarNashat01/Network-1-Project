@@ -13,8 +13,13 @@
 #include <bitset>
 #include <vector>
 #include <fstream>
+#include <bitset>
 #include "Message_m.h"
 
+
+#define MAX_SEQ 5
+#define DELAY_ERROR 4.0
+#define DUP_DELAY 0.1
 
 
 using namespace std;
@@ -26,6 +31,13 @@ enum {
     timeout,
     network_layer_ready,
 
+};
+
+enum {
+    Modification,
+    Loss,
+    Duplication,
+    Delay
 };
 
 

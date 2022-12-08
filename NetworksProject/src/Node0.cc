@@ -16,7 +16,7 @@
 #include "Node0.h"
 using namespace std;
 
-#define MAX_SEQ 5
+//#define MAX_SEQ 5
 
 
 
@@ -29,14 +29,14 @@ void Node0::initialize()
     // TODO - Generated method body
     isSender = 0;
     wStart = 0;
-    wSize = 5;
-    wEnd = wStart + wSize;
+    indToSend = 0;
+    wEnd = wStart;
     filenames[0] = "../msgs.txt";
     filenames[1] = "../msgs.txt";
 
 }
 
-bool between(int ack)
+bool Node0::between(int ack)
 {
     //because seq_nr is incremented circularly
     if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
@@ -45,16 +45,44 @@ bool between(int ack)
         return false;
 }
 
-bool canRead()                          //checks if window has available space
+int Node0::calcFilledSlots(int start) // Receiver will always return false since sending window is empty
 {
-    if(!isSender()) return false;
+    if (wEnd >= start)
+        return wEnd - start;
     else
+        return MAX_SEQ - start + wEnd;
+}
+
+bool Node0::canRead()
+{
+    if(!isSender) return false;
+
+    return calcFilledSlots(wStart) < 5;
+}
+
+mesToSend Node0::getNextMsg()
+{
+
+    mesToSend msg;
+
+    if (!canRead() || inFile.peek() == EOF)
     {
-        //TODO
-        return true;
+        msg.isNone = 1;
+        return msg;
     }
 
+    string line; inFile >> line;
+
+    msg.lost = (line[Loss] == '1');
+    msg.delay = (line[Delay] == '1') * DELAY_ERROR;
+    msg.dup = (line[Duplication] == '1');
+    msg.mod = (line[Modification] == '1');
+
+    msg.payload = line.substr(4,line.size() - 4);
+
+    return msg;
 }
+
 
 void Node0::send_data(int frame_nr, int frame_expected, char data[])
 {
@@ -68,13 +96,36 @@ void Node0::send_data(int frame_nr, int frame_expected, char data[])
     //start_timer(frame_nr); //need to implement start_timer
 }
 
-string Node0::getNextMsg()
+Message* Node0::bufToFrame(mesToSend mes)
 {
-    string line;
-    inFile >> line;
+    Message* msg = new Message("normal msg");
 
-    cout << line << endl;
-    return line;
+    // Byte stuffing loop
+    string payload = "$";
+    for( int i = 0; i < mes.payload.size(); i++)
+    {
+        if (mes.payload[i] == '$' || mes.payload[i] == '/')
+            payload += '/';
+        payload += mes.payload[i];
+    }
+    payload += '$';
+
+
+    msg->setHeader(indToSend); // packet number
+    msg->setFrame_type(frame_arrival);
+    msg->setPayload(payload.c_str());
+    msg->setTrailer(calcParity(payload));
+
+    return msg;
+}
+
+char Node0::calcParity(string msg)
+{
+    bitset<8> paritybyte = bitset<8> (0);
+    for (int i=0; i < msg.size(); i++)
+        paritybyte = (paritybyte ^ bitset<8>(msg[i]));
+
+    return char(paritybyte.to_ulong());
 }
 
 
@@ -84,26 +135,29 @@ void Node0::handleMessage(cMessage *msg)
     Message *mymsg = check_and_cast<Message *>(msg);
 
     int frame_type = mymsg->getFrame_type();
-    double delay = 0;
+    double delay = 1.5; // processing and transmission delay
 
-    switch (frame_type){
+    // Handle received event
+    switch (frame_type)
+    {
         case intialization:
         {
             if (mymsg->getNodeInd() == getIndex()){             //detect the sending node
                 inFile.open(filenames[mymsg->getNodeInd()]);
                 isSender = 1 ;
-                delay = mymsg->getStartTime();
+                delay += mymsg->getStartTime();
             }
             break;
         }
         case frame_arrival:
         {
             // TODO: Implement
+
             break;
         }
         case cksum_err:
         {
-            //TODO: impelent
+            //TODO: implement
             break;
         }
         case timeout:
@@ -111,12 +165,21 @@ void Node0::handleMessage(cMessage *msg)
             // TODO: implement
             break;
         }
-//        case network_layer_ready:
-//        {
-//            // TODO: implement
-//            break;
-//        }
     }
+
+
+    // Read more messages if available in sender
+    window[wEnd++].set(getNextMsg());
+
+    // TODO: CHECKK IF THIS WORKS
+    if (window[wEnd].isNone)
+        wEnd--; // if msg read was NULL discard it
+
+    // Send messages if available
+    while (window[indToSend].lost && calcFilledSlots(indToSend) > 0) indToSend++;
+
+    if (calcFilledSlots(indToSend) > 0)
+        sendDelayed(bufToFrame(window[indToSend]), SimTime() + delay, "out");
 
 
 
