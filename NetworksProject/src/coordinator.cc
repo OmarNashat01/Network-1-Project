@@ -23,17 +23,18 @@ Define_Module(Coordinator);
 void Coordinator::readInputFile(int &Node_id, float &starting_time)
 {
     ifstream myfile;
-    char temp;
+    string temp;
     myfile.open("../coordinator.txt");
     if (myfile.is_open())
     {
         if (myfile)
         {
             myfile >> temp;
-            Node_id = int(temp);
+            Node_id = stoi(temp);
 
             myfile >> temp;
-            starting_time = float(temp);
+            starting_time = stof(temp);
+            cout << "start time: " << starting_time << ",  temp:" << temp <<  endl;
         }
     }
     else

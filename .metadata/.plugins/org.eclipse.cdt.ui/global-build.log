@@ -1,85 +1,4 @@
-18:19:06 **** Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-MSGC: Message.msg
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
-Node0.cc
-Node0.cc:42:11: error: use of undeclared identifier 'wStart'; did you mean 'wstat'?
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-          ^~~~~~
-          wstat
-C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\sys/stat.h:176:13: note: 'wstat' declared here
-int __cdecl wstat(const wchar_t *_Filename,struct stat *_Stat);
-            ^
-Node0.cc:42:17: error: comparison between pointer and integer ('int (*)(const wchar_t *, struct stat *) __attribute__((cdecl))' and 'int')
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-          ~~~~~~^ ~~~
-Node0.cc:42:32: error: use of undeclared identifier 'wEnd'
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-                               ^
-Node0.cc:42:44: error: use of undeclared identifier 'wEnd'
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-                                           ^
-Node0.cc:42:49: error: use of undeclared identifier 'wStart'; did you mean 'wstat'?
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-                                                ^~~~~~
-                                                wstat
-C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\sys/stat.h:176:13: note: 'wstat' declared here
-int __cdecl wstat(const wchar_t *_Filename,struct stat *_Stat);
-            ^
-Node0.cc:42:61: error: use of undeclared identifier 'wStart'; did you mean 'wstat'?
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-                                                            ^~~~~~
-                                                            wstat
-C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\sys/stat.h:176:13: note: 'wstat' declared here
-int __cdecl wstat(const wchar_t *_Filename,struct stat *_Stat);
-            ^
-Node0.cc:42:67: error: comparison between pointer and integer ('int (*)(const wchar_t *, struct stat *) __attribute__((cdecl))' and 'int')
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-                                                            ~~~~~~^ ~~~
-Node0.cc:42:84: error: use of undeclared identifier 'wEnd'
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-                                                                                   ^
-Node0.cc:42:94: error: use of undeclared identifier 'wEnd'
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-                                                                                             ^
-Node0.cc:42:99: error: use of undeclared identifier 'wStart'; did you mean 'wstat'?
-    if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
-                                                                                                  ^~~~~~
-                                                                                                  wstat
-C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\sys/stat.h:176:13: note: 'wstat' declared here
-int __cdecl wstat(const wchar_t *_Filename,struct stat *_Stat);
-            ^
-Node0.cc:50:9: error: use of undeclared identifier 'isSender'
-    if(!isSender) return false;
-        ^
-11 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-18:21:47 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-Node0.cc
-Node0.cc:39:13: error: out-of-line definition of 'between' does not match any declaration in 'Node0'
-bool Node0::between(int ack)
-            ^~~~~~~
-Node0.cc:48:13: error: out-of-line definition of 'canRead' does not match any declaration in 'Node0'
-bool Node0::canRead()                          //checks if window has available space
-            ^~~~~~~
-2 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-18:24:08 **** Incremental Build of configuration release for project NetworksProject ****
+15:29:06 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -87,7 +6,286 @@ Node0.cc
 Message_m.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-19:52:33 **** Incremental Build of configuration release for project NetworksProject ****
+15:29:29 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+15:31:34 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+15:35:59 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:31:13: error: no matching function for call to 'scanf'
+            scanf(myfile, "%d %f", &Node_id, &starting_time);
+            ^~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdio.h:238:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const char *' for 1st argument
+int scanf(const char *__format, ...)
+    ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:36:51 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:31:13: error: no matching function for call to 'fscanf'
+            fscanf(myfile, "%d %f", &Node_id, &starting_time);
+            ^~~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdio.h:249:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'FILE *' (aka '_iobuf *') for 1st argument
+int fscanf(FILE *__stream, const char *__format, ...)
+    ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:38:26 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:31:13: error: no matching function for call to 'fscanf'
+            fscanf(myfile, "%d %f", &Node_id, &starting_time);
+            ^~~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdio.h:249:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'FILE *' (aka '_iobuf *') for 1st argument
+int fscanf(FILE *__stream, const char *__format, ...)
+    ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:39:53 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:36:40: error: no member named 'subtr' in 'std::__cxx11::basic_string<char>'
+            starting_time = float(temp.subtr(2,temp.size()-2));
+                                  ~~~~ ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:40:13 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:36:29: error: cannot convert 'std::__cxx11::basic_string<char>' to 'float' without a conversion operator
+            starting_time = float(temp.substr(2,temp.size()-2));
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:40:36 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:34:29: error: cannot convert 'std::__cxx11::basic_string<char>' to 'float' without a conversion operator
+            starting_time = float(temp.substr(2,temp.size()-2));
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:40:48 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+15:47:55 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+15:48:53 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:33:23: error: no matching function for call to 'atoi'
+            Node_id = atoi(temp[0]);
+                      ^~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdlib.h:355:15: note: candidate function not viable: no known conversion from '__gnu_cxx::__alloc_traits<std::allocator<char> >::value_type' (aka 'char') to 'const char *' for 1st argument; take the address of the argument with &
+  int __cdecl atoi(const char *_Str);
+              ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:49:33 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:33:35: error: member reference base type '__gnu_cxx::__alloc_traits<std::allocator<char> >::value_type' (aka 'char') is not a structure or union
+            Node_id = atoi(temp[0].to_string());
+                           ~~~~~~~^~~~~~~~~~
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:49:49 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+15:50:58 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+15:53:37 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+15:57:18 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:33:23: error: cannot convert 'std::__cxx11::string' (aka 'basic_string<char>') to 'int' without a conversion operator
+            Node_id = int(temp)-48;
+                      ^~~~~~~~
+coordinator.cc:36:29: error: cannot convert 'std::__cxx11::string' (aka 'basic_string<char>') to 'float' without a conversion operator
+            starting_time = float(temp);
+                            ^~~~~~~~~~
+1 warning and 2 errors generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:58:44 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:33:23: error: no matching function for call to 'atoi'
+            Node_id = atoi(temp);
+                      ^~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdlib.h:355:15: note: candidate function not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *' for 1st argument
+  int __cdecl atoi(const char *_Str);
+              ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:58:54 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:00:50 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:03:43 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+MSGC: Message.msg
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:53:22: error: no member named 'setStartTime' in 'Message'
+    coordinator_msg->setStartTime(starting_time);
+    ~~~~~~~~~~~~~~~  ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+16:04:10 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -97,559 +295,85 @@ coordinator.cc:16:17: warning: using directive refers to implicitly-defined name
 using namespace std;
                 ^
 1 warning generated.
-Node0.cc
-Node0.cc:48:12: error: out-of-line definition of 'calcFilledSlots' does not match any declaration in 'Node0'
-int Node0::calcFilledSlots(int start) // Receiver will always return false since sending window is empty
-           ^~~~~~~~~~~~~~~
-Node0.cc:60:28: error: too many arguments to function call, expected 0, have 1
-    return calcFilledSlots(wStart) < 5;
-           ~~~~~~~~~~~~~~~ ^~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:63:18: error: return type of out-of-line definition of 'Node0::getNextMsg' differs from that in the declaration
-mesToSend Node0::getNextMsg()
-~~~~~~~~~        ^
-./Node0.h:55:12: note: previous declaration is here
-    string getNextMsg();
-    ~~~~~~ ^
-Node0.cc:65:30: error: no member named 'peak' in 'std::basic_ifstream<char>'
-    if (!canRead() || inFile.peak() == EOF)
-                      ~~~~~~ ^
-Node0.cc:66:16: error: no viable conversion from returned value of type 'int' to function return type 'mesToSend'
-        return NULL;
-               ^~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\lib\clang\5.0.1\include\stddef.h:102:18: note: expanded from macro 'NULL'
-#    define NULL 0
-                 ^
-./Node0.h:30:8: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'int' to 'const mesToSend &' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'int' to 'mesToSend &&' for 1st argument
-Node0.cc:111:21: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
-    msg->setPayload(payload);
-                    ^~~~~~~
-./Message_m.h:73:42: note: passing argument to parameter 'payload' here
-    virtual void setPayload(const char * payload);
-                                         ^
-Node0.cc:119:5: error: use of undeclared identifier 'paritybyte'
-    paritybyte = bitset<8> (0);
-    ^
-Node0.cc:121:9: error: use of undeclared identifier 'paritybyte'
-        paritybyte = (paritybyte ^ bitset<8>(msg[i]));
-        ^
-Node0.cc:121:23: error: use of undeclared identifier 'paritybyte'
-        paritybyte = (paritybyte ^ bitset<8>(msg[i]));
-                      ^
-Node0.cc:123:17: error: use of undeclared identifier 'paritybyte'
-    return char(paritybyte.to_ulong());
-                ^
-Node0.cc:167:20: error: no viable overloaded '='
-    window[wEnd++] = getNextMsg();
-    ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~
-./Node0.h:30:8: note: candidate function (the implicit move assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'mesToSend' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const mesToSend' for 1st argument
-Node0.cc:170:27: error: invalid operands to binary expression ('mesToSend' and 'int')
-    wEnd -= (window[wEnd] == NULL); // if msg read was NULL discard it
-             ~~~~~~~~~~~~ ^  ~~~~
-Node0.cc:173:54: error: too many arguments to function call, expected 0, have 1
-    while (window[indToSend].lost && calcFilledSlots(indToSend) > 0) indToSend++;
-                                     ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:175:25: error: too many arguments to function call, expected 0, have 1
-    if (calcFilledSlots(indToSend) > 0)
-        ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-14 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-19:54:00 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-Node0.cc
-Node0.cc:48:12: error: out-of-line definition of 'calcFilledSlots' does not match any declaration in 'Node0'
-int Node0::calcFilledSlots(int start) // Receiver will always return false since sending window is empty
-           ^~~~~~~~~~~~~~~
-Node0.cc:60:28: error: too many arguments to function call, expected 0, have 1
-    return calcFilledSlots(wStart) < 5;
-           ~~~~~~~~~~~~~~~ ^~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:63:18: error: return type of out-of-line definition of 'Node0::getNextMsg' differs from that in the declaration
-mesToSend Node0::getNextMsg()
-~~~~~~~~~        ^
-./Node0.h:55:12: note: previous declaration is here
-    string getNextMsg();
-    ~~~~~~ ^
-Node0.cc:65:30: error: no member named 'peak' in 'std::basic_ifstream<char>'
-    if (!canRead() || inFile.peak() == EOF)
-                      ~~~~~~ ^
-Node0.cc:66:16: error: no viable conversion from returned value of type 'int' to function return type 'mesToSend'
-        return NULL;
-               ^~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\lib\clang\5.0.1\include\stddef.h:102:18: note: expanded from macro 'NULL'
-#    define NULL 0
-                 ^
-./Node0.h:30:8: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'int' to 'const mesToSend &' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'int' to 'mesToSend &&' for 1st argument
-Node0.cc:111:21: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
-    msg->setPayload(payload);
-                    ^~~~~~~
-./Message_m.h:73:42: note: passing argument to parameter 'payload' here
-    virtual void setPayload(const char * payload);
-                                         ^
-Node0.cc:119:5: error: use of undeclared identifier 'paritybyte'
-    paritybyte = bitset<8> (0);
-    ^
-Node0.cc:121:9: error: use of undeclared identifier 'paritybyte'
-        paritybyte = (paritybyte ^ bitset<8>(msg[i]));
-        ^
-Node0.cc:121:23: error: use of undeclared identifier 'paritybyte'
-        paritybyte = (paritybyte ^ bitset<8>(msg[i]));
-                      ^
-Node0.cc:123:17: error: use of undeclared identifier 'paritybyte'
-    return char(paritybyte.to_ulong());
-                ^
-Node0.cc:167:20: error: no viable overloaded '='
-    window[wEnd++] = getNextMsg();
-    ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~
-./Node0.h:30:8: note: candidate function (the implicit move assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'mesToSend' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const mesToSend' for 1st argument
-Node0.cc:170:22: error: invalid operands to binary expression ('mesToSend' and 'int')
-    if (window[wEnd] == NULL)
-        ~~~~~~~~~~~~ ^  ~~~~
-Node0.cc:171:15: error: expected ';' after expression
-        wEnd-- // if msg read was NULL discard it
-              ^
-              ;
-Node0.cc:174:54: error: too many arguments to function call, expected 0, have 1
-    while (window[indToSend].lost && calcFilledSlots(indToSend) > 0) indToSend++;
-                                     ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:176:25: error: too many arguments to function call, expected 0, have 1
-    if (calcFilledSlots(indToSend) > 0)
-        ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-15 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-19:54:11 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-Node0.cc
-Node0.cc:48:12: error: out-of-line definition of 'calcFilledSlots' does not match any declaration in 'Node0'
-int Node0::calcFilledSlots(int start) // Receiver will always return false since sending window is empty
-           ^~~~~~~~~~~~~~~
-Node0.cc:60:28: error: too many arguments to function call, expected 0, have 1
-    return calcFilledSlots(wStart) < 5;
-           ~~~~~~~~~~~~~~~ ^~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:63:18: error: return type of out-of-line definition of 'Node0::getNextMsg' differs from that in the declaration
-mesToSend Node0::getNextMsg()
-~~~~~~~~~        ^
-./Node0.h:55:12: note: previous declaration is here
-    string getNextMsg();
-    ~~~~~~ ^
-Node0.cc:65:30: error: no member named 'peak' in 'std::basic_ifstream<char>'
-    if (!canRead() || inFile.peak() == EOF)
-                      ~~~~~~ ^
-Node0.cc:66:16: error: no viable conversion from returned value of type 'int' to function return type 'mesToSend'
-        return NULL;
-               ^~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\lib\clang\5.0.1\include\stddef.h:102:18: note: expanded from macro 'NULL'
-#    define NULL 0
-                 ^
-./Node0.h:30:8: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'int' to 'const mesToSend &' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'int' to 'mesToSend &&' for 1st argument
-Node0.cc:111:21: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
-    msg->setPayload(payload);
-                    ^~~~~~~
-./Message_m.h:73:42: note: passing argument to parameter 'payload' here
-    virtual void setPayload(const char * payload);
-                                         ^
-Node0.cc:119:5: error: use of undeclared identifier 'paritybyte'
-    paritybyte = bitset<8> (0);
-    ^
-Node0.cc:121:9: error: use of undeclared identifier 'paritybyte'
-        paritybyte = (paritybyte ^ bitset<8>(msg[i]));
-        ^
-Node0.cc:121:23: error: use of undeclared identifier 'paritybyte'
-        paritybyte = (paritybyte ^ bitset<8>(msg[i]));
-                      ^
-Node0.cc:123:17: error: use of undeclared identifier 'paritybyte'
-    return char(paritybyte.to_ulong());
-                ^
-Node0.cc:167:20: error: no viable overloaded '='
-    window[wEnd++] = getNextMsg();
-    ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~
-./Node0.h:30:8: note: candidate function (the implicit move assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'mesToSend' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const mesToSend' for 1st argument
-Node0.cc:170:22: error: invalid operands to binary expression ('mesToSend' and 'int')
-    if (window[wEnd] == NULL)
-        ~~~~~~~~~~~~ ^  ~~~~
-Node0.cc:174:54: error: too many arguments to function call, expected 0, have 1
-    while (window[indToSend].lost && calcFilledSlots(indToSend) > 0) indToSend++;
-                                     ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:176:25: error: too many arguments to function call, expected 0, have 1
-    if (calcFilledSlots(indToSend) > 0)
-        ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-14 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-19:57:46 **** Clean-only build of configuration release for project NetworksProject ****
-make MODE=release clean 
-cd src && /usr/bin/make clean
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-Cleaning NetworksProject.exe
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-19:57:48 **** Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-MSGC: Message.msg
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
-Node0.cc
-Node0.cc:48:12: error: out-of-line definition of 'calcFilledSlots' does not match any declaration in 'Node0'
-int Node0::calcFilledSlots(int start) // Receiver will always return false since sending window is empty
-           ^~~~~~~~~~~~~~~
-Node0.cc:60:28: error: too many arguments to function call, expected 0, have 1
-    return calcFilledSlots(wStart) < 5;
-           ~~~~~~~~~~~~~~~ ^~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:63:18: error: return type of out-of-line definition of 'Node0::getNextMsg' differs from that in the declaration
-mesToSend Node0::getNextMsg()
-~~~~~~~~~        ^
-./Node0.h:55:12: note: previous declaration is here
-    string getNextMsg();
-    ~~~~~~ ^
-Node0.cc:65:30: error: no member named 'peak' in 'std::basic_ifstream<char>'
-    if (!canRead() || inFile.peak() == EOF)
-                      ~~~~~~ ^
-Node0.cc:66:16: error: no viable conversion from returned value of type 'int' to function return type 'mesToSend'
-        return NULL;
-               ^~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\lib\clang\5.0.1\include\stddef.h:102:18: note: expanded from macro 'NULL'
-#    define NULL 0
-                 ^
-./Node0.h:30:8: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'int' to 'const mesToSend &' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'int' to 'mesToSend &&' for 1st argument
-Node0.cc:111:21: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
-    msg->setPayload(payload);
-                    ^~~~~~~
-./Message_m.h:73:42: note: passing argument to parameter 'payload' here
-    virtual void setPayload(const char * payload);
-                                         ^
-Node0.cc:119:5: error: use of undeclared identifier 'paritybyte'
-    paritybyte = bitset<8> (0);
-    ^
-Node0.cc:121:9: error: use of undeclared identifier 'paritybyte'
-        paritybyte = (paritybyte ^ bitset<8>(msg[i]));
-        ^
-Node0.cc:121:23: error: use of undeclared identifier 'paritybyte'
-        paritybyte = (paritybyte ^ bitset<8>(msg[i]));
-                      ^
-Node0.cc:123:17: error: use of undeclared identifier 'paritybyte'
-    return char(paritybyte.to_ulong());
-                ^
-Node0.cc:167:20: error: no viable overloaded '='
-    window[wEnd++] = getNextMsg();
-    ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~
-./Node0.h:30:8: note: candidate function (the implicit move assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'mesToSend' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const mesToSend' for 1st argument
-Node0.cc:170:22: error: invalid operands to binary expression ('mesToSend' and 'int')
-    if (window[wEnd] == NULL)
-        ~~~~~~~~~~~~ ^  ~~~~
-Node0.cc:174:54: error: too many arguments to function call, expected 0, have 1
-    while (window[indToSend].lost && calcFilledSlots(indToSend) > 0) indToSend++;
-                                     ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:176:25: error: too many arguments to function call, expected 0, have 1
-    if (calcFilledSlots(indToSend) > 0)
-        ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-14 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-19:58:43 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-Node0.cc
-Node0.cc:48:12: error: out-of-line definition of 'calcFilledSlots' does not match any declaration in 'Node0'
-int Node0::calcFilledSlots(int start) // Receiver will always return false since sending window is empty
-           ^~~~~~~~~~~~~~~
-Node0.cc:60:28: error: too many arguments to function call, expected 0, have 1
-    return calcFilledSlots(wStart) < 5;
-           ~~~~~~~~~~~~~~~ ^~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:63:18: error: return type of out-of-line definition of 'Node0::getNextMsg' differs from that in the declaration
-mesToSend Node0::getNextMsg()
-~~~~~~~~~        ^
-./Node0.h:55:12: note: previous declaration is here
-    string getNextMsg();
-    ~~~~~~ ^
-Node0.cc:66:16: error: no viable conversion from returned value of type 'int' to function return type 'mesToSend'
-        return NULL;
-               ^~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\lib\clang\5.0.1\include\stddef.h:102:18: note: expanded from macro 'NULL'
-#    define NULL 0
-                 ^
-./Node0.h:30:8: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'int' to 'const mesToSend &' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'int' to 'mesToSend &&' for 1st argument
-Node0.cc:111:21: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
-    msg->setPayload(payload);
-                    ^~~~~~~
-./Message_m.h:73:42: note: passing argument to parameter 'payload' here
-    virtual void setPayload(const char * payload);
-                                         ^
-Node0.cc:167:20: error: no viable overloaded '='
-    window[wEnd++] = getNextMsg();
-    ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~
-./Node0.h:30:8: note: candidate function (the implicit move assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'mesToSend' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const mesToSend' for 1st argument
-Node0.cc:170:22: error: invalid operands to binary expression ('mesToSend' and 'int')
-    if (window[wEnd] == NULL)
-        ~~~~~~~~~~~~ ^  ~~~~
-Node0.cc:174:54: error: too many arguments to function call, expected 0, have 1
-    while (window[indToSend].lost && calcFilledSlots(indToSend) > 0) indToSend++;
-                                     ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-Node0.cc:176:25: error: too many arguments to function call, expected 0, have 1
-    if (calcFilledSlots(indToSend) > 0)
-        ~~~~~~~~~~~~~~~ ^~~~~~~~~
-./Node0.h:58:5: note: 'calcFilledSlots' declared here
-    int calcFilledSlots(); // Calculate number of full slots in sending window
-    ^
-9 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-19:59:11 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-Node0.cc
-Node0.cc:63:18: error: return type of out-of-line definition of 'Node0::getNextMsg' differs from that in the declaration
-mesToSend Node0::getNextMsg()
-~~~~~~~~~        ^
-./Node0.h:55:12: note: previous declaration is here
-    string getNextMsg();
-    ~~~~~~ ^
-Node0.cc:66:16: error: no viable conversion from returned value of type 'int' to function return type 'mesToSend'
-        return NULL;
-               ^~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\lib\clang\5.0.1\include\stddef.h:102:18: note: expanded from macro 'NULL'
-#    define NULL 0
-                 ^
-./Node0.h:30:8: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'int' to 'const mesToSend &' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'int' to 'mesToSend &&' for 1st argument
-Node0.cc:111:21: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
-    msg->setPayload(payload);
-                    ^~~~~~~
-./Message_m.h:73:42: note: passing argument to parameter 'payload' here
-    virtual void setPayload(const char * payload);
-                                         ^
-Node0.cc:167:20: error: no viable overloaded '='
-    window[wEnd++] = getNextMsg();
-    ~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~
-./Node0.h:30:8: note: candidate function (the implicit move assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'mesToSend' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const mesToSend' for 1st argument
-Node0.cc:170:22: error: invalid operands to binary expression ('mesToSend' and 'int')
-    if (window[wEnd] == NULL)
-        ~~~~~~~~~~~~ ^  ~~~~
-5 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-20:02:50 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-Node0.cc
-In file included from Node0.cc:16:
-./Node0.h:39:24: error: variable has incomplete type 'struct mes'
-    void set(struct mes){
-                       ^
-./Node0.h:39:21: note: forward declaration of 'mes'
-    void set(struct mes){
-                    ^
-./Node0.h:40:18: error: 'mes' does not refer to a value
-        isNone = mes.isNone;
-                 ^
-./Node0.h:39:21: note: declared here
-    void set(struct mes){
-                    ^
-./Node0.h:41:17: error: 'mes' does not refer to a value
-        delay = mes.delay;
-                ^
-./Node0.h:39:21: note: declared here
-    void set(struct mes){
-                    ^
-./Node0.h:42:19: error: 'mes' does not refer to a value
-        payload = mes.payload;
-                  ^
-./Node0.h:39:21: note: declared here
-    void set(struct mes){
-                    ^
-./Node0.h:43:15: error: 'mes' does not refer to a value
-        dup = mes.dup;
-              ^
-./Node0.h:39:21: note: declared here
-    void set(struct mes){
-                    ^
-./Node0.h:44:16: error: 'mes' does not refer to a value
-        lost = mes.lost;
-               ^
-./Node0.h:39:21: note: declared here
-    void set(struct mes){
-                    ^
-./Node0.h:45:15: error: 'mes' does not refer to a value
-        mod = mes.mod;
-              ^
-./Node0.h:39:21: note: declared here
-    void set(struct mes){
-                    ^
-Node0.cc:63:18: error: return type of out-of-line definition of 'Node0::getNextMsg' differs from that in the declaration
-mesToSend Node0::getNextMsg()
-~~~~~~~~~        ^
-./Node0.h:65:12: note: previous declaration is here
-    string getNextMsg();
-    ~~~~~~ ^
-Node0.cc:116:21: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
-    msg->setPayload(payload);
-                    ^~~~~~~
-./Message_m.h:73:42: note: passing argument to parameter 'payload' here
-    virtual void setPayload(const char * payload);
-                                         ^
-Node0.cc:172:24: error: argument type 'struct mes' is incomplete
-    window[wEnd++].set(getNextMsg());
-                       ^~~~~~~~~~~~
-./Node0.h:39:21: note: forward declaration of 'mes'
-    void set(struct mes){
-                    ^
-10 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-20:03:20 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-Node0.cc
-Node0.cc:63:18: error: return type of out-of-line definition of 'Node0::getNextMsg' differs from that in the declaration
-mesToSend Node0::getNextMsg()
-~~~~~~~~~        ^
-./Node0.h:65:12: note: previous declaration is here
-    string getNextMsg();
-    ~~~~~~ ^
-Node0.cc:116:21: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
-    msg->setPayload(payload);
-                    ^~~~~~~
-./Message_m.h:73:42: note: passing argument to parameter 'payload' here
-    virtual void setPayload(const char * payload);
-                                         ^
-Node0.cc:172:24: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'mesToSend'
-    window[wEnd++].set(getNextMsg());
-                       ^~~~~~~~~~~~
-./Node0.h:30:8: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const mesToSend &' for 1st argument
-struct mesToSend // saved in sending window
-       ^
-./Node0.h:30:8: note: candidate constructor (the implicit move constructor) not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'mesToSend &&' for 1st argument
-./Node0.h:39:24: note: passing argument to parameter 'mes' here
-    void set(mesToSend mes){
-                       ^
-3 errors generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-20:04:12 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-Node0.cc
-Node0.cc:116:21: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
-    msg->setPayload(payload);
-                    ^~~~~~~
-./Message_m.h:73:42: note: passing argument to parameter 'payload' here
-    virtual void setPayload(const char * payload);
-                                         ^
-1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-20:09:16 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 Node0.cc
 Message_m.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:05:59 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:07:04 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:13:52 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:15:03 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:17:00 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:18:26 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:19:09 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+16:20:16 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'

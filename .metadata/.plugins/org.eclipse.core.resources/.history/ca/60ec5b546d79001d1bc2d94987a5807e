@@ -1,0 +1,33 @@
+/*
+ * helpers.h
+ *
+ *  Created on: Dec 11, 2022
+ *      Author: sicom
+ */
+
+#ifndef HELPERS_H_
+#define HELPERS_H_
+
+struct mesToSend // saved in sending window
+{
+    bool isNone = 0;
+    double delay = 0;
+    string payload;
+    bool dup = 0;
+    bool lost = 0;
+    bool mod = 0;
+
+    void set(mesToSend mes){
+        isNone = mes.isNone;
+        delay = mes.delay;
+        payload = mes.payload;
+        dup = mes.dup;
+        lost = mes.lost;
+        mod = mes.mod;
+    }
+
+};
+
+
+
+#endif /* HELPERS_H_ */

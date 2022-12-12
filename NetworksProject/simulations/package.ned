@@ -10,21 +10,22 @@ import networksproject.Node0;
 //
 network Network
 {
-    @display("bgb=709,295");
-    submodules:
-        node0: Node0 {
-            @display("p=45,65");
-        }
+	int N = 2;
+	
+	submodules:
         coordinator: Coordinator {
             @display("p=291,189");
         }
-        node1: Node0 {
-            @display("p=561,63");
-        }
+        nodes[N]: Node0;
+
+
+	
+
+	
     connections:
-        node1.out --> node0.in;
-        node0.out --> node1.in;
-        coordinator.out1 --> node1.inC;
-        coordinator.out0 --> node0.inC;
+        nodes[1].out --> nodes[0].in;
+        nodes[0].out --> nodes[1].in;
+        coordinator.out1 --> nodes[1].inC;
+        coordinator.out0 --> nodes[0].inC;
 }
 
