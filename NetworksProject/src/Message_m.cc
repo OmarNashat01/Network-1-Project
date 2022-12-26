@@ -187,6 +187,9 @@ Message::Message(const char *name, short kind) : ::omnetpp::cPacket(name,kind)
     this->trailer = 0;
     this->frame_type = 0;
     this->ack_nr = 0;
+    this->delay = 0;
+    this->mod = false;
+    this->lost = false;
 }
 
 Message::Message(const Message& other) : ::omnetpp::cPacket(other)
@@ -215,6 +218,9 @@ void Message::copy(const Message& other)
     this->trailer = other.trailer;
     this->frame_type = other.frame_type;
     this->ack_nr = other.ack_nr;
+    this->delay = other.delay;
+    this->mod = other.mod;
+    this->lost = other.lost;
 }
 
 void Message::parsimPack(omnetpp::cCommBuffer *b) const
@@ -227,6 +233,9 @@ void Message::parsimPack(omnetpp::cCommBuffer *b) const
     doParsimPacking(b,this->trailer);
     doParsimPacking(b,this->frame_type);
     doParsimPacking(b,this->ack_nr);
+    doParsimPacking(b,this->delay);
+    doParsimPacking(b,this->mod);
+    doParsimPacking(b,this->lost);
 }
 
 void Message::parsimUnpack(omnetpp::cCommBuffer *b)
@@ -239,6 +248,9 @@ void Message::parsimUnpack(omnetpp::cCommBuffer *b)
     doParsimUnpacking(b,this->trailer);
     doParsimUnpacking(b,this->frame_type);
     doParsimUnpacking(b,this->ack_nr);
+    doParsimUnpacking(b,this->delay);
+    doParsimUnpacking(b,this->mod);
+    doParsimUnpacking(b,this->lost);
 }
 
 int Message::getNodeInd() const
@@ -311,6 +323,36 @@ void Message::setAck_nr(int ack_nr)
     this->ack_nr = ack_nr;
 }
 
+double Message::getDelay() const
+{
+    return this->delay;
+}
+
+void Message::setDelay(double delay)
+{
+    this->delay = delay;
+}
+
+bool Message::getMod() const
+{
+    return this->mod;
+}
+
+void Message::setMod(bool mod)
+{
+    this->mod = mod;
+}
+
+bool Message::getLost() const
+{
+    return this->lost;
+}
+
+void Message::setLost(bool lost)
+{
+    this->lost = lost;
+}
+
 class MessageDescriptor : public omnetpp::cClassDescriptor
 {
   private:
@@ -376,7 +418,7 @@ const char *MessageDescriptor::getProperty(const char *propertyname) const
 int MessageDescriptor::getFieldCount() const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
-    return basedesc ? 7+basedesc->getFieldCount() : 7;
+    return basedesc ? 10+basedesc->getFieldCount() : 10;
 }
 
 unsigned int MessageDescriptor::getFieldTypeFlags(int field) const
@@ -395,8 +437,11 @@ unsigned int MessageDescriptor::getFieldTypeFlags(int field) const
         FD_ISEDITABLE,
         FD_ISEDITABLE,
         FD_ISEDITABLE,
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
     };
-    return (field>=0 && field<7) ? fieldTypeFlags[field] : 0;
+    return (field>=0 && field<10) ? fieldTypeFlags[field] : 0;
 }
 
 const char *MessageDescriptor::getFieldName(int field) const
@@ -415,8 +460,11 @@ const char *MessageDescriptor::getFieldName(int field) const
         "trailer",
         "frame_type",
         "ack_nr",
+        "delay",
+        "mod",
+        "lost",
     };
-    return (field>=0 && field<7) ? fieldNames[field] : nullptr;
+    return (field>=0 && field<10) ? fieldNames[field] : nullptr;
 }
 
 int MessageDescriptor::findField(const char *fieldName) const
@@ -430,6 +478,9 @@ int MessageDescriptor::findField(const char *fieldName) const
     if (fieldName[0]=='t' && strcmp(fieldName, "trailer")==0) return base+4;
     if (fieldName[0]=='f' && strcmp(fieldName, "frame_type")==0) return base+5;
     if (fieldName[0]=='a' && strcmp(fieldName, "ack_nr")==0) return base+6;
+    if (fieldName[0]=='d' && strcmp(fieldName, "delay")==0) return base+7;
+    if (fieldName[0]=='m' && strcmp(fieldName, "mod")==0) return base+8;
+    if (fieldName[0]=='l' && strcmp(fieldName, "lost")==0) return base+9;
     return basedesc ? basedesc->findField(fieldName) : -1;
 }
 
@@ -449,8 +500,11 @@ const char *MessageDescriptor::getFieldTypeString(int field) const
         "char",
         "int",
         "int",
+        "double",
+        "bool",
+        "bool",
     };
-    return (field>=0 && field<7) ? fieldTypeStrings[field] : nullptr;
+    return (field>=0 && field<10) ? fieldTypeStrings[field] : nullptr;
 }
 
 const char **MessageDescriptor::getFieldPropertyNames(int field) const
@@ -524,6 +578,9 @@ std::string MessageDescriptor::getFieldValueAsString(void *object, int field, in
         case 4: return long2string(pp->getTrailer());
         case 5: return long2string(pp->getFrame_type());
         case 6: return long2string(pp->getAck_nr());
+        case 7: return double2string(pp->getDelay());
+        case 8: return bool2string(pp->getMod());
+        case 9: return bool2string(pp->getLost());
         default: return "";
     }
 }
@@ -545,6 +602,9 @@ bool MessageDescriptor::setFieldValueAsString(void *object, int field, int i, co
         case 4: pp->setTrailer(string2long(value)); return true;
         case 5: pp->setFrame_type(string2long(value)); return true;
         case 6: pp->setAck_nr(string2long(value)); return true;
+        case 7: pp->setDelay(string2double(value)); return true;
+        case 8: pp->setMod(string2bool(value)); return true;
+        case 9: pp->setLost(string2bool(value)); return true;
         default: return false;
     }
 }

@@ -21,7 +21,7 @@
 #define MAX_SEQ 6
 #define DELAY_ERROR 4.0
 #define DUP_DELAY 0.1
-
+#define TO_DELAY 10
 
 using namespace std;
 
@@ -31,6 +31,8 @@ enum {
     cksum_err,
     timeout,
     network_layer_ready,
+    ack,
+    nack,
 
 };
 
@@ -40,6 +42,8 @@ enum {
     Duplication,
     Delay
 };
+
+
 
 struct mesToSend // saved in sending window
 {
@@ -76,6 +80,7 @@ protected:
     mesToSend buffer[MAX_SEQ];
 
 public:
+    bool Sender(){ return isSender;}
     bool openFile(string filename){
         inFile.open(filename);
         isSender = 1;
@@ -90,7 +95,14 @@ public:
         else
             return false;
     }
+    static char calcParity(string msg)
+    {
+        bitset<8> paritybyte = bitset<8> (0);
+        for (int i=0; i < msg.size(); i++)
+            paritybyte = (paritybyte ^ bitset<8>(msg[i]));
 
+        return char(paritybyte.to_ulong());
+    }
     bool canRead()  // Checks if there is space in sending window to store one more frame ( if not sender 0)
     {
         if(!isSender) return false;
@@ -116,15 +128,6 @@ public:
         return 1;
     }
 
-    char calcParity(string msg)
-    {
-        bitset<8> paritybyte = bitset<8> (0);
-        for (int i=0; i < msg.size(); i++)
-            paritybyte = (paritybyte ^ bitset<8>(msg[i]));
-
-        return char(paritybyte.to_ulong());
-    }
-
     int calcFilledSlots(int start) // Receiver will always return false since sending window is empty
     {
         if (wEnd >= start)
@@ -138,6 +141,9 @@ public:
             return NULL;
 
         Message* msg = new Message("normal msg");
+
+        msg->setLost(buffer[indToSend].lost);
+        msg->setMod(buffer[indToSend].mod);
 
         // Byte stuffing loop
         string payload = "$";
@@ -155,7 +161,7 @@ public:
         msg->setPayload(payload.c_str());
         msg->setTrailer(calcParity(payload));
 
-        delay = buffer[indToSend].delay;
+        delay = buffer[indToSend].delay + 1;
         indToSend = (indToSend + 1) % MAX_SEQ;
         return msg;
     }

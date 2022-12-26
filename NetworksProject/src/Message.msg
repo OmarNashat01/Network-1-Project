@@ -9,4 +9,8 @@ packet Message {
     int frame_type; //Data=0,ACK=1,NACK=2
   
     int ack_nr;
+    
+    double delay;
+    bool mod;
+    bool lost;
 }

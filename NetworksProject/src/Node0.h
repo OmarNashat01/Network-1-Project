@@ -34,6 +34,7 @@ class Node0 : public cSimpleModule
     string filenames[2];
 
     Window sendWindow;
+    int frame_expected;
 
     virtual void initialize();
     virtual void handleMessage(cMessage *msg);

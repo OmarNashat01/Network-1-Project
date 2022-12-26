@@ -32,6 +32,10 @@
  *     int frame_type; //Data=0,ACK=1,NACK=2
  * 
  *     int ack_nr;
+ * 
+ *     double delay;
+ *     bool mod;
+ *     bool lost;
  * }
  * </pre>
  */
@@ -45,6 +49,9 @@ class Message : public ::omnetpp::cPacket
     char trailer;
     int frame_type;
     int ack_nr;
+    double delay;
+    bool mod;
+    bool lost;
 
   private:
     void copy(const Message& other);
@@ -77,6 +84,12 @@ class Message : public ::omnetpp::cPacket
     virtual void setFrame_type(int frame_type);
     virtual int getAck_nr() const;
     virtual void setAck_nr(int ack_nr);
+    virtual double getDelay() const;
+    virtual void setDelay(double delay);
+    virtual bool getMod() const;
+    virtual void setMod(bool mod);
+    virtual bool getLost() const;
+    virtual void setLost(bool lost);
 };
 
 inline void doParsimPacking(omnetpp::cCommBuffer *b, const Message& obj) {obj.parsimPack(b);}
