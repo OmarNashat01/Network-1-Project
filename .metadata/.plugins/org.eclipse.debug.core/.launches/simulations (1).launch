@@ -24,4 +24,5 @@
 <stringAttribute key="org.omnetpp.launch.SHARED_LIBS" value="${opp_shared_libs:/NetworksProject/simulations}"/>
 <intAttribute key="org.omnetpp.launch.SWITCH_CONFIG_BEFORE_BUILD" value="0"/>
 <stringAttribute key="org.omnetpp.launch.WORKING_DIRECTORY" value="/NetworksProject/simulations"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
 </launchConfiguration>

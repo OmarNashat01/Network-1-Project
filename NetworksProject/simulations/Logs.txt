@@ -1,0 +1,33 @@
+At time: 0.5, Node id: 1, [processing] Packet number: 0, Introducing channel error with code= 0000
+At time: 1, Node id: 1, [processing] Packet number: 1, Introducing channel error with code= 0000
+At time: 1.5, Node id: 1, [sent], seq number= 0, and payload= , and trailer= 00000000, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 1.5, Node id: 1, [processing] Packet number: 2, Introducing channel error with code= 0000
+At time: 2, Node id: 1, [sent], seq number= 1, and payload= , and trailer= 00001011, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 2, Node id: 1, [processing] Packet number: 3, Introducing channel error with code= 0000
+At time: 2.5, Node id: 1, [sent], seq number= 2, and payload= , and trailer= 00000000, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 3, Node id: 1, [sent], seq number= 3, and payload= , and trailer= 00001011, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 3, Node id: 1, [processing] Packet number: 4, Introducing channel error with code= 0000
+At time: 3.5, Node id: 1, [processing] Packet number: 0, Introducing channel error with code= 0000
+At time: 4, Node id: 1, [sent], seq number= 4, and payload= , and trailer= 00000000, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 4, Node id: 1, [processing] Packet number: 1, Introducing channel error with code= 0000
+At time: 4.5, Node id: 1, [sent], seq number= 0, and payload= , and trailer= 00000000, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 4.5, Node id: 1, [processing] Packet number: 2, Introducing channel error with code= 0000
+At time: 5, Node id: 1, [sent], seq number= 1, and payload= , and trailer= 00000000, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 5.5, Node id: 1, [sent], seq number= 2, and payload= , and trailer= 00000000, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 5.5, Node id: 1, [processing] Packet number: 3, Introducing channel error with code= 0000
+At time: 6, Node id: 1, [processing] Packet number: 4, Introducing channel error with code= 0000
+At time: 6.5, Node id: 1, [sent], seq number= 3, and payload= , and trailer= 00000000, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 6.5, Node id: 1, [processing] Packet number: 0, Introducing channel error with code= 0000
+At time: 7, Node id: 1, [sent], seq number= 4, and payload= , and trailer= 00000000, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 7, Node id: 1, [processing] Packet number: 1, Introducing channel error with code= 0000
+At time: 7.5, Node id: 1, [sent], seq number= 0, and payload= , and trailer= 00010101, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 8, Node id: 1, [sent], seq number= 1, and payload= , and trailer= 00010110, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 8, Node id: 1, [processing] Packet number: 2, Introducing channel error with code= 0000
+At time: 8.5, Node id: 1, [processing] Packet number: 3, Introducing channel error with code= 0000
+At time: 9, Node id: 1, [sent], seq number= 2, and payload= , and trailer= 00010111, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 9, Node id: 1, [processing] Packet number: 4, Introducing channel error with code= 0000
+At time: 9.5, Node id: 1, [sent], seq number= 3, and payload= , and trailer= 00000111, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 9.5, Node id: 1, [processing] Packet number: 0, Introducing channel error with code= 0000
+At time: 10, Node id: 1, [sent], seq number= 4, and payload= , and trailer= 00000100, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+At time: 10.5, Node id: 1, [sent], seq number= 0, and payload= , and trailer= 00000101, modified= 0, Lost= 0, Duplicate= 0, delay= 1
+yload= $fc$, and trailer= 00000101, modified= 0, Lost= 0, Duplicate= 0, delay= 0

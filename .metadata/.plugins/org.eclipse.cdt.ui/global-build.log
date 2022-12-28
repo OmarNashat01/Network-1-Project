@@ -1,4 +1,4 @@
-15:29:06 **** Incremental Build of configuration release for project NetworksProject ****
+19:30:28 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -6,196 +6,52 @@ Node0.cc
 Message_m.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-15:29:29 **** Incremental Build of configuration release for project NetworksProject ****
+19:35:15 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 make[1]: Nothing to be done for 'all'.
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-15:31:34 **** Incremental Build of configuration release for project NetworksProject ****
+19:46:06 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-15:35:59 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-coordinator.cc:31:13: error: no matching function for call to 'scanf'
-            scanf(myfile, "%d %f", &Node_id, &starting_time);
-            ^~~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdio.h:238:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const char *' for 1st argument
-int scanf(const char *__format, ...)
-    ^
-1 warning and 1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:36:51 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-coordinator.cc:31:13: error: no matching function for call to 'fscanf'
-            fscanf(myfile, "%d %f", &Node_id, &starting_time);
-            ^~~~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdio.h:249:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'FILE *' (aka '_iobuf *') for 1st argument
-int fscanf(FILE *__stream, const char *__format, ...)
-    ^
-1 warning and 1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:38:26 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-coordinator.cc:31:13: error: no matching function for call to 'fscanf'
-            fscanf(myfile, "%d %f", &Node_id, &starting_time);
-            ^~~~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdio.h:249:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'FILE *' (aka '_iobuf *') for 1st argument
-int fscanf(FILE *__stream, const char *__format, ...)
-    ^
-1 warning and 1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:39:53 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-coordinator.cc:36:40: error: no member named 'subtr' in 'std::__cxx11::basic_string<char>'
-            starting_time = float(temp.subtr(2,temp.size()-2));
-                                  ~~~~ ^
-1 warning and 1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:40:13 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-coordinator.cc:36:29: error: cannot convert 'std::__cxx11::basic_string<char>' to 'float' without a conversion operator
-            starting_time = float(temp.substr(2,temp.size()-2));
-                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1 warning and 1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:40:36 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-coordinator.cc:34:29: error: cannot convert 'std::__cxx11::basic_string<char>' to 'float' without a conversion operator
-            starting_time = float(temp.substr(2,temp.size()-2));
-                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1 warning and 1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:40:48 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
-Node0.cc
-Creating executable: ../out/clang-release/src/NetworksProject.exe
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-15:47:55 **** Incremental Build of configuration release for project NetworksProject ****
+19:50:56 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 make[1]: Nothing to be done for 'all'.
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-15:48:53 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-coordinator.cc:33:23: error: no matching function for call to 'atoi'
-            Node_id = atoi(temp[0]);
-                      ^~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdlib.h:355:15: note: candidate function not viable: no known conversion from '__gnu_cxx::__alloc_traits<std::allocator<char> >::value_type' (aka 'char') to 'const char *' for 1st argument; take the address of the argument with &
-  int __cdecl atoi(const char *_Str);
-              ^
-1 warning and 1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:49:33 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-coordinator.cc:33:35: error: member reference base type '__gnu_cxx::__alloc_traits<std::allocator<char> >::value_type' (aka 'char') is not a structure or union
-            Node_id = atoi(temp[0].to_string());
-                           ~~~~~~~^~~~~~~~~~
-1 warning and 1 error generated.
-make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make: *** [Makefile:2: all] Error 2
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:49:49 **** Incremental Build of configuration release for project NetworksProject ****
-make MODE=release all 
-cd src && /usr/bin/make
-make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
-Creating executable: ../out/clang-release/src/NetworksProject.exe
-make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-15:50:58 **** Incremental Build of configuration release for project NetworksProject ****
+19:57:34 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-15:53:37 **** Incremental Build of configuration release for project NetworksProject ****
+20:02:55 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+20:07:08 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+20:48:59 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+20:51:17 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -205,9 +61,59 @@ using namespace std;
                 ^
 1 warning generated.
 Node0.cc
+Node0.cc:100:40: error: 'ack_nr' is a protected member of 'Message'
+            sendWindow.ackFrame(mymsg->ack_nr);
+                                       ^
+./Message_m.h:51:9: note: declared protected here
+    int ack_nr;
+        ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+20:51:41 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-15:57:18 **** Incremental Build of configuration release for project NetworksProject ****
+20:53:58 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+20:55:14 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+20:55:47 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+20:58:04 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:03:52 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:08:08 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -215,18 +121,61 @@ coordinator.cc
 coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
 using namespace std;
                 ^
-coordinator.cc:33:23: error: cannot convert 'std::__cxx11::string' (aka 'basic_string<char>') to 'int' without a conversion operator
-            Node_id = int(temp)-48;
-                      ^~~~~~~~
-coordinator.cc:36:29: error: cannot convert 'std::__cxx11::string' (aka 'basic_string<char>') to 'float' without a conversion operator
-            starting_time = float(temp);
-                            ^~~~~~~~~~
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:09:17 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:10:08 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:10:39 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:14:33 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+coordinator.cc:61:14: error: redefinition of 'coordinator_msg1'
+    Message *coordinator_msg1= coordinator_msg->dup();
+             ^
+coordinator.cc:58:14: note: previous definition is here
+    Message *coordinator_msg1= coordinator_msg->dup();
+             ^
+coordinator.cc:62:5: error: no matching member function for call to 'sendDelayed'
+    sendDelayed( 40, coordinator_msg1, "out1");
+    ^~~~~~~~~~~
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:222:18: note: candidate function not viable: no known conversion from 'int' to 'omnetpp::cMessage *' for 1st argument
+    virtual void sendDelayed(cMessage *msg, simtime_t delay, const char *gatename, int gateindex=-1);
+                 ^
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:215:18: note: candidate function not viable: no known conversion from 'int' to 'omnetpp::cMessage *' for 1st argument
+    virtual void sendDelayed(cMessage *msg, simtime_t delay, int gateid);
+                 ^
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:228:18: note: candidate function not viable: no known conversion from 'int' to 'omnetpp::cMessage *' for 1st argument
+    virtual void sendDelayed(cMessage *msg, simtime_t delay, cGate *outputgate);
+                 ^
 1 warning and 2 errors generated.
 make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 make: *** [Makefile:2: all] Error 2
 "make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:58:44 **** Incremental Build of configuration release for project NetworksProject ****
+21:14:46 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -234,18 +183,24 @@ coordinator.cc
 coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
 using namespace std;
                 ^
-coordinator.cc:33:23: error: no matching function for call to 'atoi'
-            Node_id = atoi(temp);
-                      ^~~~
-C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdlib.h:355:15: note: candidate function not viable: no known conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *' for 1st argument
-  int __cdecl atoi(const char *_Str);
-              ^
+coordinator.cc:62:5: error: no matching member function for call to 'sendDelayed'
+    sendDelayed( 40, coordinator_msg1, "out1");
+    ^~~~~~~~~~~
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:222:18: note: candidate function not viable: no known conversion from 'int' to 'omnetpp::cMessage *' for 1st argument
+    virtual void sendDelayed(cMessage *msg, simtime_t delay, const char *gatename, int gateindex=-1);
+                 ^
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:215:18: note: candidate function not viable: no known conversion from 'int' to 'omnetpp::cMessage *' for 1st argument
+    virtual void sendDelayed(cMessage *msg, simtime_t delay, int gateid);
+                 ^
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:228:18: note: candidate function not viable: no known conversion from 'int' to 'omnetpp::cMessage *' for 1st argument
+    virtual void sendDelayed(cMessage *msg, simtime_t delay, cGate *outputgate);
+                 ^
 1 warning and 1 error generated.
 make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 make: *** [Makefile:2: all] Error 2
 "make MODE=release all" terminated with exit code 2. Build might be incomplete.
-15:58:54 **** Incremental Build of configuration release for project NetworksProject ****
+21:15:27 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -257,7 +212,958 @@ using namespace std;
 Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:00:50 **** Incremental Build of configuration release for project NetworksProject ****
+21:19:18 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:21:47 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:23:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:25:09 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:26:06 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:29:03 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:29:56 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:31:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:33:22 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:34:49 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:37:28 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:43:14 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:44:24 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:46:50 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:115:62: error: reference to overloaded function could not be resolved; did you mean to call it?
+        cout << canRead() << ": " << inFile.peek() == EOF << endl;
+                                                             ^~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:590:5: note: possible target for call
+    endl(basic_ostream<_CharT, _Traits>& __os)
+    ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+21:47:18 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:50:10 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:51:57 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:55:52 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:59:02 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+21:59:36 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:00:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:122:20: error: redefinition of 'line'
+            string line; inFile >> line;
+                   ^
+./global.h:117:20: note: previous definition is here
+            string line; inFile >> line;
+                   ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:00:41 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+2 warnings generated.
+Node0.cc
+In file included from Node0.cc:16:
+In file included from ./Node0.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:01:28 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+2 warnings generated.
+Node0.cc
+In file included from Node0.cc:16:
+In file included from ./Node0.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:03:12 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+2 warnings generated.
+Node0.cc
+In file included from Node0.cc:16:
+In file included from ./Node0.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:04:48 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+2 warnings generated.
+Node0.cc
+In file included from Node0.cc:16:
+In file included from ./Node0.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:05:36 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:129:39: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'std::ifstream' (aka 'basic_ifstream<char>'))
+            cout << canRead() << ": " << inFile << endl;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:245:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const void *' for 1st argument; take the address of the argument with &
+      operator<<(const void* __p)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\system_error:217:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const std::error_code' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:108:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &)' (aka 'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &)') for 1st argument
+      operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:117:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::basic_ostream<char, std::char_traits<char> >::__ios_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ios_type &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+      operator<<(__ios_type& (*__pf)(__ios_type&))
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:127:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+      operator<<(ios_base& (*__pf) (ios_base&))
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:166:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'long' for 1st argument
+      operator<<(long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:170:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned long' for 1st argument
+      operator<<(unsigned long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:174:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'bool' for 1st argument
+      operator<<(bool __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:178:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'short' for 1st argument
+      operator<<(short __n);
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:181:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned short' for 1st argument
+      operator<<(unsigned short __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:189:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'int' for 1st argument
+      operator<<(int __n);
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:192:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned int' for 1st argument
+      operator<<(unsigned int __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:201:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'long long' for 1st argument
+      operator<<(long long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:205:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned long long' for 1st argument
+      operator<<(unsigned long long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:220:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'double' for 1st argument
+      operator<<(double __f)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:224:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'float' for 1st argument
+      operator<<(float __f)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:232:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'long double' for 1st argument
+      operator<<(long double __f)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:270:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::basic_ostream<char, std::char_traits<char> >::__streambuf_type *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+      operator<<(__streambuf_type* __sb);
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:502:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'char' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:508:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:514:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'signed char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, signed char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:519:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, unsigned char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:556:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, const char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:569:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const signed char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, const signed char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:574:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const unsigned char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, const unsigned char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/ostream.tcc:321:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const char *' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, const char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:497:5: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'std::basic_ifstream<char>')
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, _CharT __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6082:5: note: candidate template ignored: could not match 'basic_string' against 'basic_ifstream'
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bitset:1530:5: note: candidate template ignored: could not match 'bitset' against 'basic_ifstream'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:656:5: note: candidate template ignored: requirement '__and_<__not_<is_lvalue_reference<basic_ostream<char> &> >, __is_convertible_to_basic_ostream<basic_ostream<char> &>, __is_insertable<basic_ostream<char> &&, const basic_ifstream<char> &> >::value' was not satisfied [with _Ostream = std::basic_ostream<char> &, _Tp = std::basic_ifstream<char>]
+    operator<<(_Ostream&& __os, const _Tp& __x)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:539:5: note: candidate template ignored: could not match 'const _CharT *' against 'std::ifstream' (aka 'basic_ifstream<char>')
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, const _CharT* __s)
+    ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+2 warnings and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:05:43 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:129:39: error: invalid operands to binary expression ('basic_ostream<char, std::char_traits<char> >' and 'std::ifstream' (aka 'basic_ifstream<char>'))
+            cout << canRead() << ": " << inFile << endl;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:245:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const void *' for 1st argument; take the address of the argument with &
+      operator<<(const void* __p)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\system_error:217:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const std::error_code' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:108:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &)' (aka 'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &)') for 1st argument
+      operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:117:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::basic_ostream<char, std::char_traits<char> >::__ios_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ios_type &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+      operator<<(__ios_type& (*__pf)(__ios_type&))
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:127:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+      operator<<(ios_base& (*__pf) (ios_base&))
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:166:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'long' for 1st argument
+      operator<<(long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:170:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned long' for 1st argument
+      operator<<(unsigned long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:174:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'bool' for 1st argument
+      operator<<(bool __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:178:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'short' for 1st argument
+      operator<<(short __n);
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:181:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned short' for 1st argument
+      operator<<(unsigned short __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:189:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'int' for 1st argument
+      operator<<(int __n);
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:192:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned int' for 1st argument
+      operator<<(unsigned int __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:201:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'long long' for 1st argument
+      operator<<(long long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:205:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned long long' for 1st argument
+      operator<<(unsigned long long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:220:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'double' for 1st argument
+      operator<<(double __f)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:224:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'float' for 1st argument
+      operator<<(float __f)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:232:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'long double' for 1st argument
+      operator<<(long double __f)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:270:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::basic_ostream<char, std::char_traits<char> >::__streambuf_type *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+      operator<<(__streambuf_type* __sb);
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:502:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'char' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:508:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:514:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'signed char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, signed char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:519:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'unsigned char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, unsigned char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:556:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, const char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:569:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const signed char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, const signed char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:574:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const unsigned char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, const unsigned char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/ostream.tcc:321:5: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'const char *' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, const char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:497:5: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'std::basic_ifstream<char>')
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, _CharT __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6082:5: note: candidate template ignored: could not match 'basic_string' against 'basic_ifstream'
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bitset:1530:5: note: candidate template ignored: could not match 'bitset' against 'basic_ifstream'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:656:5: note: candidate template ignored: requirement '__and_<__not_<is_lvalue_reference<basic_ostream<char> &> >, __is_convertible_to_basic_ostream<basic_ostream<char> &>, __is_insertable<basic_ostream<char> &&, const basic_ifstream<char> &> >::value' was not satisfied [with _Ostream = std::basic_ostream<char> &, _Tp = std::basic_ifstream<char>]
+    operator<<(_Ostream&& __os, const _Tp& __x)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:539:5: note: candidate template ignored: could not match 'const _CharT *' against 'std::ifstream' (aka 'basic_ifstream<char>')
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, const _CharT* __s)
+    ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+2 warnings and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:05:57 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:129:50: error: invalid operands to binary expression ('std::ifstream' (aka 'basic_ifstream<char>') and 'int')
+            cout << canRead() << ": " << (inFile == NULL) << endl;
+                                          ~~~~~~ ^  ~~~~
+./global.h:122:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+2 warnings and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:09:50 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:119:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+2 warnings generated.
+Node0.cc
+In file included from Node0.cc:16:
+In file included from ./Node0.h:20:
+./global.h:119:13: warning: expression result unused [-Wunused-value]
+            line; inFile >> line;
+            ^~~~
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:11:26 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:15:06 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:19:03 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:22:51 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:24:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:28:52 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:87:16: error: overload resolution selected deleted operator '='
+        inFile = file;
+        ~~~~~~ ^ ~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\fstream:540:7: note: candidate function has been explicitly deleted
+      operator=(const basic_ifstream&) = delete;
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\fstream:543:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::basic_ifstream<char> &&' for 1st argument
+      operator=(basic_ifstream&& __rhs)
+      ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:28:59 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:87:16: error: overload resolution selected deleted operator '='
+        inFile = file;
+        ~~~~~~ ^ ~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\fstream:540:7: note: candidate function has been explicitly deleted
+      operator=(const basic_ifstream&) = delete;
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\fstream:543:7: note: candidate function not viable: no known conversion from 'std::ifstream' (aka 'basic_ifstream<char>') to 'std::basic_ifstream<char> &&' for 1st argument
+      operator=(basic_ifstream&& __rhs)
+      ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:31:00 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:88:20: error: member reference type 'std::ifstream *' (aka 'basic_ifstream<char> *') is a pointer; did you mean to use '->'?
+        if (!inFile.is_open()) return 0;
+             ~~~~~~^
+                   ->
+./global.h:119:49: error: member reference type 'std::ifstream *' (aka 'basic_ifstream<char> *') is a pointer; did you mean to use '->'?
+            cout << canRead() << ": " << (inFile.peek() == EOF) << endl;
+                                          ~~~~~~^
+                                                ->
+./global.h:124:29: error: invalid operands to binary expression ('std::ifstream *' (aka 'basic_ifstream<char> *') and 'std::__cxx11::string' (aka 'basic_string<char>'))
+        string line; inFile >> line;
+                     ~~~~~~ ^  ~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\streambuf:168:9: note: candidate template ignored: could not match 'basic_istream<type-parameter-0-0, type-parameter-0-1>' against 'std::basic_ifstream<char> *'
+        operator>>(basic_istream<_CharT2, _Traits2>&,
+        ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\istream:756:5: note: candidate template ignored: could not match 'basic_istream<char, type-parameter-0-0>' against 'std::basic_ifstream<char> *'
+    operator>>(basic_istream<char, _Traits>& ___in, unsigned char& __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\istream:761:5: note: candidate template ignored: could not match 'basic_istream<char, type-parameter-0-0>' against 'std::basic_ifstream<char> *'
+    operator>>(basic_istream<char, _Traits>& ___in, signed char& __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\istream:803:5: note: candidate template ignored: could not match 'basic_istream<char, type-parameter-0-0>' against 'std::basic_ifstream<char> *'
+    operator>>(basic_istream<char, _Traits>& ___in, unsigned char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\istream:808:5: note: candidate template ignored: could not match 'basic_istream<char, type-parameter-0-0>' against 'std::basic_ifstream<char> *'
+    operator>>(basic_istream<char, _Traits>& ___in, signed char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/istream.tcc:923:5: note: candidate template ignored: could not match 'basic_istream<type-parameter-0-0, type-parameter-0-1>' against 'std::basic_ifstream<char> *'
+    operator>>(basic_istream<_CharT, _Traits>& ___in, _CharT& __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/istream.tcc:955:5: note: candidate template ignored: could not match 'basic_istream<type-parameter-0-0, type-parameter-0-1>' against 'std::basic_ifstream<char> *'
+    operator>>(basic_istream<_CharT, _Traits>& ___in, _CharT* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\istream:955:5: note: candidate template ignored: requirement '__and_<__not_<is_lvalue_reference<basic_ifstream<char> *&> >, __is_convertible_to_basic_istream<basic_ifstream<char> *&>, __is_extractable<basic_ifstream<char> *&&, basic_string<char> &&> >::value' was not satisfied [with _Istream = std::basic_ifstream<char> *&, _Tp = std::__cxx11::basic_string<char> &]
+    operator>>(_Istream&& __is, _Tp&& __x)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bitset:1462:5: note: candidate template ignored: could not match 'basic_istream<type-parameter-0-0, type-parameter-0-1>' against 'std::basic_ifstream<char> *'
+    operator>>(std::basic_istream<_CharT, _Traits>& __is, bitset<_Nb>& __x)
+    ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:133:9: error: no matching function for call to 'getline'
+        getline(inFile, line);
+        ^~~~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6122:5: note: candidate template ignored: could not match 'basic_istream<type-parameter-0-0, type-parameter-0-1>' against 'std::basic_ifstream<char> *'
+    getline(basic_istream<_CharT, _Traits>& __is,
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6137:5: note: candidate template ignored: could not match 'basic_istream<type-parameter-0-0, type-parameter-0-1>' against 'std::basic_ifstream<char> *'
+    getline(basic_istream<_CharT, _Traits>&& __is,
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6130:5: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+    getline(basic_istream<_CharT, _Traits>&& __is,
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\streambuf:173:9: note: candidate function template not viable: requires 3 arguments, but 2 were provided
+        getline(basic_istream<_CharT2, _Traits2>&,
+        ^
+1 warning and 4 errors generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:31:37 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:32:28 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:32:58 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:33:26 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:36:54 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:118:31: error: no member named 'ate' in 'std::_Ios_Openmode'; did you mean 'omnetpp::cLogProxy::nullstream::ate'?
+        inFile.open(filename, ios_base::openmode::ate);
+                              ^~~~~~~~~~~~~~~~~~~~~~~
+                              omnetpp::cLogProxy::nullstream::ate
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/ios_base.h:435:27: note: 'omnetpp::cLogProxy::nullstream::ate' declared here
+    static const openmode ate =         _S_ate;
+                          ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:38:34 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:40:49 **** Incremental Build of configuration debug for project NetworksProject ****
+make MODE=debug all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Message_m.cc
+Creating executable: ../out/clang-debug/src/NetworksProject_dbg.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:49:22 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Node0.cc:29:5: error: use of undeclared identifier 'senderWindow'; did you mean 'sendWindow'?
+    senderWindow.inFile.open(filenames[0], ifstream::in);
+    ^~~~~~~~~~~~
+    sendWindow
+./Node0.h:35:12: note: 'sendWindow' declared here
+    Window sendWindow;
+           ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+22:49:37 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:52:03 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+22:52:49 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+23:07:36 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+23:10:43 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:143:32: error: 'mesToSend' does not refer to a value
+            msgToSend->setName(mesToSend->getPayload());
+                               ^
+./global.h:48:8: note: declared here
+struct mesToSend // saved in sending window
+       ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:11:33 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+23:12:41 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -268,7 +1174,186 @@ using namespace std;
 1 warning generated.
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:03:43 **** Incremental Build of configuration release for project NetworksProject ****
+23:19:55 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Node0.cc:54:32: error: cannot pass object of non-trivial type 'std::__cxx11::string' (aka 'basic_string<char>') through variadic function; call will abort at runtime [-Wnon-pod-varargs]
+        printf("(%s)Time: %d", nodeType, simTime());
+                               ^
+Node0.cc:54:42: error: cannot pass object of non-trivial type 'omnetpp::simtime_t' (aka 'omnetpp::SimTime') through variadic function; call will abort at runtime [-Wnon-pod-varargs]
+        printf("(%s)Time: %d", nodeType, simTime());
+                                         ^
+2 errors generated.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:21:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:54:30: error: cannot pass object of non-trivial type 'std::__cxx11::string' (aka 'basic_string<char>') through variadic function; call will abort at runtime [-Wnon-pod-varargs]
+        printf("(%s)Time: ", nodeType);
+                             ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:22:22 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+23:27:51 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:59:52: error: no member named 'c_str' in 'omnetpp::SimTime'
+        fprintf(logs, "At time %s, %s\n",simTime().c_str(), nodeType);
+                                         ~~~~~~~~~ ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:28:55 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:59:9: error: no matching function for call to 'fprintf'
+        fprintf(logs, "At time %s, %s\n",simTime().str().c_str(), nodeType);
+        ^~~~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdio.h:294:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'FILE *' (aka '_iobuf *') for 1st argument
+int fprintf (FILE *__stream, const char *__format, ...)
+    ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:30:17 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:31:9: error: member reference type 'FILE *' (aka '_iobuf *') is a pointer; did you mean to use '->'?
+    logs.open("Logs.txt", ofstream::out);
+    ~~~~^
+        ->
+Node0.cc:31:10: error: no member named 'open' in '_iobuf'
+    logs.open("Logs.txt", ofstream::out);
+    ~~~~ ^
+Node0.cc:59:67: error: cannot pass object of non-trivial type 'std::__cxx11::string' (aka 'basic_string<char>') through variadic function; call will abort at runtime [-Wnon-pod-varargs]
+        fprintf(logs, "At time %s, %s\n",simTime().str().c_str(), nodeType);
+                                                                  ^
+3 errors generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:31:12 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:31:9: error: member reference type 'FILE *' (aka '_iobuf *') is a pointer; did you mean to use '->'?
+    logs.open("Logs.txt", ofstream::out);
+    ~~~~^
+        ->
+Node0.cc:31:10: error: no member named 'open' in '_iobuf'
+    logs.open("Logs.txt", ofstream::out);
+    ~~~~ ^
+2 errors generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:31:42 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:61:9: error: no matching function for call to 'fprintf'
+        fprintf(logs, "At tim\n");
+        ^~~~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdio.h:294:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'FILE *' (aka '_iobuf *') for 1st argument
+int fprintf (FILE *__stream, const char *__format, ...)
+    ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:32:09 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:31:11: error: no member named 'open' in '_iobuf'
+    logs->open("Logs.txt", ofstream::out);
+    ~~~~  ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:32:26 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:31:11: error: no member named 'open' in '_iobuf'
+    logs->open("Logs.txt");
+    ~~~~  ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:34:00 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+23:34:54 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+23:39:35 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:61:9: error: no matching function for call to 'fprintf'
+        fprintf(logs, "At tim\n");
+        ^~~~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\x86_64-w64-mingw32\include\stdio.h:294:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'FILE *' (aka '_iobuf *') for 1st argument
+int fprintf (FILE *__stream, const char *__format, ...)
+    ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:53:18 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -277,15 +1362,528 @@ coordinator.cc
 coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
 using namespace std;
                 ^
-coordinator.cc:53:22: error: no member named 'setStartTime' in 'Message'
-    coordinator_msg->setStartTime(starting_time);
-    ~~~~~~~~~~~~~~~  ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+In file included from ./global.h:18:
+./Message_m.h:70:22: error: redefinition of 'dup' as different kind of symbol
+    virtual Message *dup() const override {return new Message(*this);}
+                     ^
+./Message_m.h:56:10: note: previous definition is here
+    bool dup;
+         ^
+coordinator.cc:58:52: error: called object type 'bool' is not a function or function pointer
+    Message *coordinator_msg1= coordinator_msg->dup();
+                               ~~~~~~~~~~~~~~~~~~~~^
+coordinator.cc:58:49: error: 'dup' is a protected member of 'Message'
+    Message *coordinator_msg1= coordinator_msg->dup();
+                                                ^
+./Message_m.h:56:10: note: declared protected here
+    bool dup;
+         ^
+1 warning and 3 errors generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:54:27 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+MSGC: Message.msg
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Node0.cc:48:77: error: use of undeclared identifier 'getNodeInd'
+                << ", starting sending time after processing, Node id: " << getNodeInd()
+                                                                            ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+23:55:13 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Message_m.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+23:56:59 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+00:06:51 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+00:15:29 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:46:68: error: no member named 'c_str' in 'std::bitset<8>'
+            << ", and trailer= " << bitset<8>(mymsg->getTrailer()).c_str()
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+Node0.cc:50:13: error: invalid operands to binary expression ('int' and 'const char *')
+            << ", delay= " << (mymsg->getDelay() > 0) << endl;
+            ^  ~~~~~~~~~~~
+2 errors generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+00:16:18 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:50:13: error: invalid operands to binary expression ('int' and 'const char *')
+            << ", delay= " << (mymsg->getDelay() > 0) << endl;
+            ^  ~~~~~~~~~~~
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+00:16:53 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:50:13: error: invalid operands to binary expression ('int' and 'const char *')
+            << ", delay= " << mymsg->getDelay() << endl;
+            ^  ~~~~~~~~~~~
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+00:17:15 **** Clean-only build of configuration release for project NetworksProject ****
+make MODE=release clean 
+cd src && /usr/bin/make clean
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Cleaning NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+00:17:16 **** Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+MSGC: Message.msg
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Node0.cc:50:13: error: invalid operands to binary expression ('int' and 'const char *')
+            << ", delay= " << mymsg->getDelay() << endl;
+            ^  ~~~~~~~~~~~
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+00:18:10 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:50:13: error: invalid operands to binary expression ('int' and 'const char *')
+            << ", delay= " << (int)mymsg->getDelay() << endl;
+            ^  ~~~~~~~~~~~
+1 error generated.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+00:18:21 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:50:13: error: invalid operands to binary expression ('int' and 'const char *')
+            << ", delay= " << (char)mymsg->getDelay() << endl;
+            ^  ~~~~~~~~~~~
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+00:18:43 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Message_m.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+00:35:58 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+MSGC: Message.msg
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Node0.cc:93:36: error: use of undeclared identifier 'delay'
+            scheduleAt(simTime() + delay, mymsg);
+                                   ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+00:36:36 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Message_m.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+00:42:14 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+00:42:32 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+01:09:47 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+MSGC: Message.msg
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:173:23: error: no viable conversion from 'std::__cxx11::string' (aka 'basic_string<char>') to 'const char *'
+        msg->setError(buffer[indToSend].error);
+                      ^~~~~~~~~~~~~~~~~~~~~~~
+./Message_m.h:104:40: note: passing argument to parameter 'error' here
+    virtual void setError(const char * error);
+                                       ^
 1 warning and 1 error generated.
 make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 make: *** [Makefile:2: all] Error 2
 "make MODE=release all" terminated with exit code 2. Build might be incomplete.
-16:04:10 **** Incremental Build of configuration release for project NetworksProject ****
+01:10:07 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Node0.cc:38:13: error: invalid operands to binary expression ('std::ostream' (aka 'basic_ostream<char>') and 'std::ofstream' (aka 'basic_ofstream<char>'))
+            << logs << "Node id: " << getIndex();
+            ^  ~~~~
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:245:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const void *' for 1st argument; take the address of the argument with &
+      operator<<(const void* __p)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\system_error:217:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const std::error_code' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:108:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &)' (aka 'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &)') for 1st argument
+      operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:117:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'std::basic_ostream<char, std::char_traits<char> >::__ios_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ios_type &)' (aka 'basic_ios<char, std::char_traits<char> > &(*)(basic_ios<char, std::char_traits<char> > &)') for 1st argument
+      operator<<(__ios_type& (*__pf)(__ios_type&))
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:127:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'std::ios_base &(*)(std::ios_base &)' for 1st argument
+      operator<<(ios_base& (*__pf) (ios_base&))
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:166:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'long' for 1st argument
+      operator<<(long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:170:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'unsigned long' for 1st argument
+      operator<<(unsigned long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:174:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'bool' for 1st argument
+      operator<<(bool __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:178:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'short' for 1st argument
+      operator<<(short __n);
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:181:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'unsigned short' for 1st argument
+      operator<<(unsigned short __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:189:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'int' for 1st argument
+      operator<<(int __n);
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:192:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'unsigned int' for 1st argument
+      operator<<(unsigned int __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:201:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'long long' for 1st argument
+      operator<<(long long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:205:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'unsigned long long' for 1st argument
+      operator<<(unsigned long long __n)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:220:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'double' for 1st argument
+      operator<<(double __f)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:224:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'float' for 1st argument
+      operator<<(float __f)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:232:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'long double' for 1st argument
+      operator<<(long double __f)
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:270:7: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'std::basic_ostream<char, std::char_traits<char> >::__streambuf_type *' (aka 'basic_streambuf<char, std::char_traits<char> > *') for 1st argument
+      operator<<(__streambuf_type* __sb);
+      ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:502:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'char' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:508:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:514:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'signed char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, signed char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:519:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'unsigned char' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, unsigned char __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:556:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, const char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:569:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const signed char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, const signed char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:574:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const unsigned char *' for 2nd argument
+    operator<<(basic_ostream<char, _Traits>& ___out, const unsigned char* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/ostream.tcc:321:5: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const char *' for 2nd argument
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, const char* __s)
+    ^
+C:/omnetpp-5.6.2/include/omnetpp/simtime.h:456:22: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const omnetpp::SimTime' for 2nd argument
+inline std::ostream& operator<<(std::ostream& os, const SimTime& x)
+                     ^
+C:/omnetpp-5.6.2/include/omnetpp/cownedobject.h:290:23: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const omnetpp::cOwnedObject *' for 2nd argument
+SIM_API std::ostream& operator<< (std::ostream& os, const cOwnedObject *p);
+                      ^
+C:/omnetpp-5.6.2/include/omnetpp/cownedobject.h:291:23: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const omnetpp::cOwnedObject' for 2nd argument
+SIM_API std::ostream& operator<< (std::ostream& os, const cOwnedObject& o);
+                      ^
+C:/omnetpp-5.6.2/include/omnetpp/cownedobject.h:293:22: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'omnetpp::cOwnedObject *' for 2nd argument
+inline std::ostream& operator<< (std::ostream& os, cOwnedObject *p) {
+                     ^
+C:/omnetpp-5.6.2/include/omnetpp/cownedobject.h:297:22: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'omnetpp::cOwnedObject &' for 2nd argument
+inline std::ostream& operator<< (std::ostream& os, cOwnedObject& o) {
+                     ^
+C:/omnetpp-5.6.2/include/omnetpp/opp_string.h:170:22: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const omnetpp::opp_string' for 2nd argument
+inline std::ostream& operator<<(std::ostream& out, const opp_string& s)
+                     ^
+C:/omnetpp-5.6.2/include/omnetpp/mersennetwister.h:367:22: note: candidate function not viable: no known conversion from 'std::ofstream' (aka 'basic_ofstream<char>') to 'const omnetpp::MTRand' for 2nd argument
+inline std::ostream& operator<<( std::ostream& os, const MTRand& mtrand )
+                     ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:497:5: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'std::basic_ofstream<char>')
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, _CharT __c)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:539:5: note: candidate template ignored: could not match 'const _CharT *' against 'std::ofstream' (aka 'basic_ofstream<char>')
+    operator<<(basic_ostream<_CharT, _Traits>& ___out, const _CharT* __s)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\ostream:656:5: note: candidate template ignored: requirement '__and_<__not_<is_lvalue_reference<basic_ostream<char> &> >, __is_convertible_to_basic_ostream<basic_ostream<char> &>, __is_insertable<basic_ostream<char> &&, const basic_ofstream<char> &> >::value' was not satisfied [with _Ostream = std::basic_ostream<char> &, _Tp = std::basic_ofstream<char>]
+    operator<<(_Ostream&& __os, const _Tp& __x)
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6082:5: note: candidate template ignored: could not match 'basic_string' against 'basic_ofstream'
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+    ^
+C:\omnetpp-5.6.2\tools\win64\mingw64\include\c++\7.1.0\bitset:1530:5: note: candidate template ignored: could not match 'bitset' against 'basic_ofstream'
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+    ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make: *** [Makefile:2: all] Error 2
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+01:10:44 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Message_m.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+01:13:38 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+01:47:16 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+MSGC: Message.msg
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Node0.cc:104:46: error: no viable conversion from 'Message' to 'omnetpp::cMessage *'
+            scheduleAt(simTime() + TO_DELAY, timers[mymsg->getAck_nr()]);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:335:52: note: passing argument to parameter 'msg' here
+    virtual void scheduleAt(simtime_t t, cMessage *msg);
+                                                   ^
+Node0.cc:146:40: error: no member named 'cancelEvent' in 'Message'
+            timers[mymsg->getAck_nr()].cancelEvent();
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+2 errors generated.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+01:48:10 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:104:46: error: no viable conversion from 'Message' to 'omnetpp::cMessage *'
+            scheduleAt(simTime() + TO_DELAY, timers[mymsg->getAck_nr()]);
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:335:52: note: passing argument to parameter 'msg' here
+    virtual void scheduleAt(simtime_t t, cMessage *msg);
+                                                   ^
+Node0.cc:146:25: error: no viable conversion from 'Message' to 'omnetpp::cMessage *'
+            cancelEvent(timers[mymsg->getAck_nr()]);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:343:45: note: passing argument to parameter 'msg' here
+    virtual cMessage *cancelEvent(cMessage *msg);
+                                            ^
+2 errors generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+01:48:50 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:146:25: error: no viable conversion from 'Message' to 'omnetpp::cMessage *'
+            cancelEvent(timers[mymsg->getAck_nr()]);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:343:45: note: passing argument to parameter 'msg' here
+    virtual cMessage *cancelEvent(cMessage *msg);
+                                            ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+01:49:05 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Message_m.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+01:49:53 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+01:51:24 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+01:53:14 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+01:54:47 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+01:58:27 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:00:15 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:06:47 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:08:55 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:10:52 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:12:00 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:25:05 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
@@ -299,81 +1897,153 @@ Node0.cc
 Message_m.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:05:59 **** Incremental Build of configuration release for project NetworksProject ****
+02:31:21 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:150:13: error: use of undeclared identifier 'TOFrame'
+            TOFrame(mymsg->getAck_nr());
+            ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+02:34:07 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:37:44 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 make[1]: Nothing to be done for 'all'.
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:07:04 **** Incremental Build of configuration release for project NetworksProject ****
+02:38:49 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 make[1]: Nothing to be done for 'all'.
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:13:52 **** Incremental Build of configuration release for project NetworksProject ****
+02:47:19 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
 Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:15:03 **** Incremental Build of configuration release for project NetworksProject ****
+02:49:23 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
 Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:17:00 **** Incremental Build of configuration release for project NetworksProject ****
+02:51:51 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
 Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:18:26 **** Incremental Build of configuration release for project NetworksProject ****
+02:52:58 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:53:28 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 make[1]: Nothing to be done for 'all'.
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:19:09 **** Incremental Build of configuration release for project NetworksProject ****
+02:54:21 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
 Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-16:20:16 **** Incremental Build of configuration release for project NetworksProject ****
+02:55:05 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
 Node0.cc
 Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:56:14 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:59:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+02:59:34 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:00:53 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:02:14 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:03:15 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:03:46 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:04:15 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:05:11 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:07:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:09:23 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'

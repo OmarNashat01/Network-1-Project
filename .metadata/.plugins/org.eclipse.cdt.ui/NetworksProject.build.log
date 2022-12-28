@@ -1,15 +1,9 @@
-16:20:16 **** Incremental Build of configuration release for project NetworksProject ****
+03:09:23 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-coordinator.cc
-coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
-using namespace std;
-                ^
-1 warning generated.
-Node0.cc
-Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Nothing to be done for 'all'.
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 
-16:20:22 Build Finished. 0 errors, 1 warnings. (took 6s.302ms)
+03:09:23 Build Finished. 0 errors, 0 warnings. (took 385ms)
 

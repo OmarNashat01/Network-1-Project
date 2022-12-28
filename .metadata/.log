@@ -819,3 +819,634 @@ java.lang.RuntimeException:
 java.lang.RuntimeException: 
 	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 0 2022-12-12 16:22:47.433
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.core.resources.ResourcesPlugin.stop() of bundle org.eclipse.core.resources.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:919)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1029)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:658)
+	at org.eclipse.osgi.container.Module.stop(Module.java:520)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1885)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1760)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:658)
+	at org.eclipse.osgi.container.Module.stop(Module.java:520)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:220)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:95)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:298)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:124)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2242)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:622)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:459)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:899)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:891)
+	... 13 more
+Root exception:
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:220)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:95)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:298)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:124)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2242)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:622)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:459)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:899)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:891)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1029)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:370)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:658)
+	at org.eclipse.osgi.container.Module.stop(Module.java:520)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1885)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1760)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:275)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:202)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:658)
+	at org.eclipse.osgi.container.Module.stop(Module.java:520)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:207)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:220)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2022-12-26 17:41:41.314 -----------------------------------------------
+eclipse.buildId=5.6.2.200518-aa79d0918f
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.omnetpp.main 1 0 2022-12-26 17:42:23.640
+!MESSAGE OMNeT++ IDE 5.6.2.200518-aa79d0918f started.
+!SESSION 2022-12-27 19:43:17.467 -----------------------------------------------
+eclipse.buildId=5.6.2.200518-aa79d0918f
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.omnetpp.main 1 0 2022-12-27 19:43:25.417
+!MESSAGE OMNeT++ IDE 5.6.2.200518-aa79d0918f started.
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 20:58:20.112
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073741819 2022-12-27 20:58:20.122
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 21:20:04.237
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 21:20:04.238
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 21:44:22.191
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 21:44:22.192
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 21:46:48.803
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 21:46:48.803
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 21:50:07.435
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 21:50:07.436
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 21:51:49.340
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 21:51:49.341
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 21:55:49.713
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 21:55:49.714
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 21:58:59.878
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 21:58:59.878
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 21:59:34.681
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 21:59:34.682
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:00:28.495
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:00:28.495
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:03:08.314
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:03:08.315
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:04:44.259
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:04:44.260
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:11:24.240
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:11:24.240
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:15:05.010
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:15:05.010
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:19:00.233
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:19:00.234
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:20:05.126
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:20:05.127
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:28:39.186
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:28:39.186
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:31:45.834
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073741819 2022-12-27 22:31:45.835
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:32:35.609
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073741819 2022-12-27 22:32:35.611
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:33:24.237
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:33:24.238
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:34:40.865
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:34:40.866
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 22:52:47.144
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 1 2022-12-27 22:52:47.144
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2022-12-27 23:05:07.340 -----------------------------------------------
+eclipse.buildId=5.6.2.200518-aa79d0918f
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.omnetpp.main 1 0 2022-12-27 23:05:47.274
+!MESSAGE OMNeT++ IDE 5.6.2.200518-aa79d0918f started.
+
+!ENTRY org.eclipse.cdt.ui 4 0 2022-12-27 23:54:05.917
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element Node0.cc does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:486)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2022-12-27 23:54:05.918
+!MESSAGE Element Node0.cc does not exist.
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 23:58:07.682
+!MESSAGE Streams are already closed.
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-27 23:58:07.682
+!MESSAGE Streams are already closed.
+!SESSION 2022-12-27 23:58:09.331 -----------------------------------------------
+eclipse.buildId=5.6.2.200518-aa79d0918f
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.omnetpp.main 1 0 2022-12-27 23:58:23.672
+!MESSAGE OMNeT++ IDE 5.6.2.200518-aa79d0918f started.
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 01:49:50.956
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 01:49:50.961
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 01:51:21.995
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 01:51:21.995
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 01:53:02.700
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 01:53:02.701
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 01:54:45.835
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 01:54:45.835
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 01:56:32.921
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 01:56:32.921
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 01:58:54.691
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 01:58:54.693
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:01:31.799
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 02:01:31.800
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:07:14.708
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 02:07:14.709
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:10:50.079
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 02:10:50.079
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:11:58.482
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 02:11:58.483
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:16:37.039
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 02:16:37.040
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:34:44.528
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 02:34:44.530
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:38:24.491
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 02:38:24.492
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:47:16.363
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 02:47:16.365
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:47:53.498
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 02:47:53.499
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:51:05.081
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 02:51:05.082
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:52:48.434
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 02:52:48.435
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:53:21.971
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073741819 2022-12-28 02:53:21.973
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:54:10.892
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073741819 2022-12-28 02:54:10.893
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:54:41.183
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 02:54:41.184
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:55:50.210
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 02:55:50.211
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:59:30.849
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 02:59:30.849
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 02:59:54.232
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 02:59:54.233
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 03:00:21.946
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 03:00:21.947
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 03:01:17.401
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 03:01:17.402
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 03:02:37.224
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 03:02:37.225
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 03:03:37.553
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 03:03:37.554
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 03:04:13.175
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 -1073740940 2022-12-28 03:04:13.176
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.console 4 0 2022-12-28 03:05:03.535
+!MESSAGE Streams are already closed.
+
+!ENTRY org.omnetpp.launch 4 3 2022-12-28 03:05:03.537
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
