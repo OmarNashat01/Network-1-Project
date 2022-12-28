@@ -76,21 +76,18 @@ struct mesToSend // saved in sending window
 class Window
 {
 protected:
-    string filename;
     bool isSender = 0;
     int wStart = 0;
     int indToSend = 0;
     int wEnd = 0;
-    mesToSend buffer[MAX_SEQ];
+    int wSize = 0;
+    mesToSend buffer[MAX_SEQ+1];
 
 public:
     ifstream inFile;
     bool Sender(){ return isSender;}
     bool openFile(string name){
-//        inFile.open(name, ifstream::in);
-        filename = name;
         isSender = 1;
-        if (!inFile.is_open()) return 0;
         return 1;
     }
 
@@ -112,7 +109,7 @@ public:
     bool canRead()  // Checks if there is space in sending window to store one more frame ( if not sender 0)
     {
         if(!isSender) return false;
-        return calcFilledSlots(wStart) < MAX_SEQ-1;
+        return calcFilledSlots(wStart) < (MAX_SEQ - 1);
     }
 
     bool readNext(){
@@ -126,6 +123,7 @@ public:
 
         buffer[wEnd].lost = (line[Loss] == '1');
         buffer[wEnd].delay = (line[Delay] == '1') * DELAY_ERROR;
+        if (line[Delay]=='1') cout << "the delay is equal to: " << buffer[wEnd].delay << ", simTime: " << omnetpp::simTime() << endl;
         buffer[wEnd].dup = (line[Duplication] == '1');
         buffer[wEnd].mod = (line[Modification] == '1');
 
@@ -136,11 +134,13 @@ public:
 
 
         wEnd = ( wEnd + 1) % MAX_SEQ;
+        wSize++;
         return 1;
     }
 
     int calcFilledSlots(int start) // Receiver will always return false since sending window is empty
     {
+//        return wSize;
         if (wEnd >= start)
             return wEnd - start;
         else
@@ -176,17 +176,25 @@ public:
         msg->setError(buffer[indToSend].error.c_str());
 
         delay = buffer[indToSend].delay + 1;
+        msg->setDelay(delay);
         indToSend = (indToSend + 1) % MAX_SEQ;
 
         return msg;
     }
     void ackFrame(int ack_nr){
-        if (inWindow(ack_nr))
+        if (inWindow(ack_nr)){
             wStart = (ack_nr + 1) % MAX_SEQ;
+        }
     }
     void TOFrame(int fr_nr){ //Time out
         if (inWindow(fr_nr))
+        {
             indToSend = fr_nr;
+            buffer[indToSend].mod = 0;
+            buffer[indToSend].lost = 0;
+            buffer[indToSend].dup = 0;
+            buffer[indToSend].delay = 0;
+        }
     }
 
 

@@ -20,24 +20,43 @@ using namespace std;
 Define_Module(Node0);
 
 void Node0::Printlog(int type, Message* mymsg){
-    logs << "At time: " << simTime()
-         << ", Node id: " << getIndex();
+//    if (type == 1)
+//        return;
+//    logs << "At time: " << simTime()
+//         << ", Node id: " << getIndex();
+//    if (type == 0){
+//        logs << ", [sent]"
+//                << ", seq no.= " << mymsg->getHeader()
+//                << ", payload= " << mymsg->getPayload()
+//                << ", trailer= " << bitset<8>(mymsg->getTrailer()).to_string()
+//                << ", mod= " << (mymsg->getMod() ? 0: -1 )
+//                << ", Lost= " << mymsg->getLost()
+//                << ", Dup= " << (mymsg->getDuplicated() > 0)
+//                << ", del= " << (mymsg->getDelay() > 1) << endl;
+//
+//    }
+//    else if (type == 1){
+//        logs << ", [processing] Packet number: " << mymsg->getHeader() << ", Introducing channel error with code= " << mymsg->getError() << endl;
+//    }
+    logs << "At time[" << simTime()
+         << "], Node[" << getIndex();
     if (type == 0){
-        logs << ", [sent]"
-                << ", seq number= " << mymsg->getHeader()
-                << ", and payload= " << mymsg->getPayload()
-                << ", and trailer= " << bitset<8>(mymsg->getTrailer()).to_string()
-                << ", modified= " << -1 * mymsg->getMod()
-                << ", Lost= " << mymsg->getLost()
-                << ", Duplicate= " << (mymsg->getDuplicated() > 0)
-                << ", delay= " << (mymsg->getDelay() > 0) << endl;
+        logs << "] [sent] "
+                << "frame with seq_num=[" << mymsg->getHeader()
+                << "] and payload=[ " << mymsg->getPayload()
+                << " ] and trailer=[ " << bitset<8>(mymsg->getTrailer()).to_string()
+                << " ] , Modified [" << (mymsg->getMod() ? 0 : -1)
+                << " ] , Lost [" << (mymsg->getLost() ? "Yes":"No")
+                << "], Duplicate [" << (mymsg->getDuplicated() > 0)
+                << "], Delay [" << (mymsg->getDelay() > 1) << "]." << endl;
 
     }
     else if (type == 1){
-        logs << ", [processing] Packet number: " << mymsg->getHeader() << ", Introducing channel error with code= " << mymsg->getError() << endl;
+        logs << "] , Introducing channel error with code = [" << mymsg->getError() << "]." << endl;
     }
 
 }
+
 
 void Node0::initialize()
 {
@@ -48,7 +67,7 @@ void Node0::initialize()
 
     sendWindow.inFile.open(filenames[getIndex()], ifstream::in);
 
-    logs.open("Logs.txt", ofstream::out);
+    logs.open("Logs.txt", std::ios::app);
 
     frame_expected = 0;
 
@@ -56,6 +75,7 @@ void Node0::initialize()
         timers[i].setFrame_type(timeout);
         timers[i].setAck_nr(i);
     }
+
 }
 
 
@@ -81,6 +101,7 @@ void Node0::handleMessage(cMessage *msg)
             }
             else
                 cancelAndDelete(mymsg);
+
             break;
         }
         case frame_arrival:
@@ -103,27 +124,33 @@ void Node0::handleMessage(cMessage *msg)
                 mymsg->setPayload(payload.c_str());
             }
 
-            Printlog(0, mymsg);
-
             // Start Timer for timeout
             if (sendWindow.Sender()){
                 EV << "starting timers at node: " << getIndex() << ", ack: " << mymsg->getHeader() << endl;
+                if (timers[mymsg->getHeader()].isScheduled())
+                    cancelEvent(&timers[mymsg->getHeader()]);
                 scheduleAt(simTime() + TO_DELAY, &timers[mymsg->getHeader()]);
             }
 
-            if (mymsg->getAck_nr() == -1)
+            if (mymsg->getAck_nr() == -1){
                 mymsg->setFrame_type(frame_arrival);
+                Printlog(0, mymsg);
+            }
             else
-                if (mymsg->getHeader() != mymsg->getAck_nr())
+                if (strcmp(mymsg->getName(),"NACK") == 0)
                     mymsg->setFrame_type(nack);
+                else if (strcmp(mymsg->getName(),"CKSUM") == 0)
+                    mymsg->setFrame_type(cksum_err);
                 else
                     mymsg->setFrame_type(ack);
+
 
             if (!mymsg->getLost())
                 sendDelayed(mymsg, mymsg->getDelay(), "out");
             else
                 cancelAndDelete(mymsg);
 
+            return;
             break;
         }
         case receiveProcessing:
@@ -131,33 +158,50 @@ void Node0::handleMessage(cMessage *msg)
             char parity = Window::calcParity(mymsg->getPayload());
             mymsg->setDelay(1.0);
             mymsg->setPayload("");
-            mymsg->setName("ack");
+            mymsg->setName("ACK");
             mymsg->setAck_nr(frame_expected);
 
+
+
+            if (parity != mymsg->getTrailer())
+               mymsg->setName("CKSUM");
+
             if (mymsg->getHeader() != frame_expected)
-               mymsg->setName("Nack");
-            else
+               mymsg->setName("NACK");
+
+            if (strcmp(mymsg->getName(),"ACK") == 0)
                frame_expected = (frame_expected + 1) % MAX_SEQ;
 
-            if (parity != mymsg->getTrailer()){
-               mymsg->setFrame_type(cksum_err);
-               mymsg->setName("check sum error");
-            }
             mymsg->setFrame_type(sendProcessing);
-            scheduleAt(simTime() + 0.5, mymsg);
-
+            scheduleAt(simTime(), mymsg);
+            logs << "At time[" << simTime() << "], Node[" << getIndex()
+                    << "] Sending [" << mymsg->getName() << "] with number [" << mymsg->getAck_nr()
+                    << "] , loss [" << (mymsg->getLost() ? "Yes":"No") << "]." << endl;
+            return;
             break;
         }
         case timeout:
         {
+            cout << "time out event here...\n\n";
             // TODO: implement
+            logs << "Time out event at time [" <<  simTime()
+                    << "], at Node[" << getIndex() << "] for frame with seq_num=["
+                    <<  mymsg->getHeader() << "]." << endl;
+
             sendWindow.TOFrame(mymsg->getAck_nr());
+            for (int i=0; i < MAX_SEQ; i++)
+            {
+                if (timers[i].isScheduled())
+                    cancelEvent(&timers[i]);
+            }
             break;
         }
         case ack:
         {
             sendWindow.ackFrame(mymsg->getAck_nr());
-            EV << "stopping timers at node: " << getIndex() << ", ack: " << mymsg->getAck_nr() << endl;
+            //            if (mymsg->getAck_nr() == 4)
+//                cout<< "el ack wesel at :" << simTime() << endl;
+//            EV << "stopping timers at node: " << getIndex() << ", ack: " << mymsg->getAck_nr() << endl;
             cancelEvent(&timers[mymsg->getAck_nr()]);
             break;
         }
@@ -179,26 +223,22 @@ void Node0::handleMessage(cMessage *msg)
 
 
     // Read more messages if available in sender
-
     while (sendWindow.readNext());
-
 
 
 
     // Send messages if available
     int msgDelay;
     Message * msgToSend = sendWindow.getMsg(msgDelay);
+
     while (msgToSend != NULL){
         Printlog(1,msgToSend);
 
-        mymsg->setDelay(mymsg->getDelay() + msgDelay);
         msgToSend->setName(msgToSend->getPayload());
         msgToSend->setFrame_type(sendProcessing);
         scheduleAt(simTime() + delay, msgToSend);
         msgToSend = sendWindow.getMsg(msgDelay);
         delay += 0.5; // processing delay between each message
-        if (msgToSend == NULL)
-            cancelAndDelete(mymsg);
     }
 
 

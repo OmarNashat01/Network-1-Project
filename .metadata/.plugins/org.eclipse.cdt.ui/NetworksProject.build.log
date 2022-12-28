@@ -1,9 +1,10 @@
-03:09:23 **** Incremental Build of configuration release for project NetworksProject ****
+07:35:46 **** Incremental Build of configuration release for project NetworksProject ****
 make MODE=release all 
 cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
-make[1]: Nothing to be done for 'all'.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 
-03:09:23 Build Finished. 0 errors, 0 warnings. (took 385ms)
+07:35:50 Build Finished. 0 errors, 0 warnings. (took 4s.86ms)
 

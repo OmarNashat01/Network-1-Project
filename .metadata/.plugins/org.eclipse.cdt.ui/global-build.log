@@ -2047,3 +2047,755 @@ cd src && /usr/bin/make
 make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
 make[1]: Nothing to be done for 'all'.
 make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:19:49 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:21:47 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:23:39 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:24:48 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:27:07 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:28:07 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:28:36 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:35:53 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:116:17: error: use of undeclared identifier 'rescheduleAt'; did you mean 'scheduleAt'?
+                rescheduleAt(simTime() + TO_DELAY, &timers[mymsg->getHeader()]);
+                ^~~~~~~~~~~~
+                scheduleAt
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:335:18: note: 'scheduleAt' declared here
+    virtual void scheduleAt(simtime_t t, cMessage *msg);
+                 ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+03:37:39 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:117:33: error: no viable conversion from 'Message' to 'omnetpp::cMessage *'
+                    cancelEvent(timers[mymsg->getHeader()]);
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/omnetpp-5.6.2/include/omnetpp/csimplemodule.h:343:45: note: passing argument to parameter 'msg' here
+    virtual cMessage *cancelEvent(cMessage *msg);
+                                            ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+03:38:00 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:40:06 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:41:05 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:41:20 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:43:13 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:45:08 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:45:40 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:46:17 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:47:01 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:47:13 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:47:35 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:47:49 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:48:53 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:49:40 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:49:54 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:51:18 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:54:23 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:54:44 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:54:59 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:57:41 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+03:58:27 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:03:59 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:07:56 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:08:19 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:08:47 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:21:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:22:06 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:26:48 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:27:07 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:27:42 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:29:49 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:35:58 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:214:5: error: expected statement
+    }
+    ^
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+04:36:11 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:38:07 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:44:47 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:47:36 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+04:51:12 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:11:49 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:13:33 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:17:27 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:25:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:30:44 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:34:14 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:37:34 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:38:58 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:43:18 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:126:13: error: expected expression
+        if ()
+            ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+05:43:30 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:45:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+In file included from coordinator.cc:17:
+In file included from ./coordinator.h:20:
+./global.h:126:107: error: use of undeclared identifier 'simTime'; did you mean 'omnetpp::simTime'?
+        if (line[Delay]=='1') cout << "the delay is equal to: " << buffer[wEnd].delay << ", simTime: " << simTime() << endl;
+                                                                                                          ^~~~~~~
+                                                                                                          omnetpp::simTime
+C:/omnetpp-5.6.2/include\omnetpp/csimulation.h:568:18: note: 'omnetpp::simTime' declared here
+inline simtime_t simTime() {return cSimulation::getActiveSimulation()->getSimTime();}
+                 ^
+1 warning and 1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/coordinator.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+05:47:04 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:53:07 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:54:46 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:56:24 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+05:58:07 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+coordinator.cc
+coordinator.cc:16:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+1 warning generated.
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+06:03:13 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+06:03:55 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+06:19:40 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:145:64: error: expected ';' after expression
+                mymsg->setHeader((frame_expected-1) % MAX_SEQ )
+                                                               ^
+                                                               ;
+1 error generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+06:19:54 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+06:23:31 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+06:55:07 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:61:5: error: extraneous closing brace ('}')
+    }
+    ^
+Node0.cc:200:85: error: invalid operands to binary expression ('const char *' and 'const char *')
+            logs << "At time[" << simTime() << "], Node[" << getIndex();"Sending [" << mymsg->getName()
+                                                                        ~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~
+2 errors generated.
+make[1]: *** [Makefile:105: ../out/clang-release/src/Node0.o] Error 1
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+make: *** [Makefile:2: all] Error 2
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+06:55:44 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:03:42 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:142:43: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
+                else if (mymsg->getName() == "CKSUM")
+                                          ^  ~~~~~~~
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:10:06 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:142:43: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
+                else if (mymsg->getName() == "CKSUM")
+                                          ^  ~~~~~~~
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:12:12 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:142:43: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
+                else if (mymsg->getName() == "CKSUM")
+                                          ^  ~~~~~~~
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:15:27 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Node0.cc:142:43: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
+                else if (mymsg->getName() == "CKSUM")
+                                          ^  ~~~~~~~
+1 warning generated.
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:19:46 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:22:52 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:25:57 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:29:14 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:30:24 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:33:12 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:34:45 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+07:35:46 **** Incremental Build of configuration release for project NetworksProject ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
+Node0.cc
+Creating executable: ../out/clang-release/src/NetworksProject.exe
+make[1]: Leaving directory '/c/Users/sicom/Desktop/University/Networks-1/project/NetworksProject/src'
