@@ -36,6 +36,8 @@
  *     double delay;
  *     bool mod;
  *     bool lost;
+ *     bool duplicated;
+ *     string error;
  * }
  * </pre>
  */
@@ -52,6 +54,8 @@ class Message : public ::omnetpp::cPacket
     double delay;
     bool mod;
     bool lost;
+    bool duplicated;
+    ::omnetpp::opp_string error;
 
   private:
     void copy(const Message& other);
@@ -90,6 +94,10 @@ class Message : public ::omnetpp::cPacket
     virtual void setMod(bool mod);
     virtual bool getLost() const;
     virtual void setLost(bool lost);
+    virtual bool getDuplicated() const;
+    virtual void setDuplicated(bool duplicated);
+    virtual const char * getError() const;
+    virtual void setError(const char * error);
 };
 
 inline void doParsimPacking(omnetpp::cCommBuffer *b, const Message& obj) {obj.parsimPack(b);}

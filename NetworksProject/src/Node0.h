@@ -32,10 +32,13 @@ class Node0 : public cSimpleModule
 {
   protected:
     string filenames[2];
-
     Window sendWindow;
+    Message timers[MAX_SEQ];
     int frame_expected;
 
+    ofstream logs;
+
+    void Printlog(int type, Message * mymsg);
     virtual void initialize();
     virtual void handleMessage(cMessage *msg);
 };

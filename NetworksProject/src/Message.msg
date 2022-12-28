@@ -13,4 +13,6 @@ packet Message {
     double delay;
     bool mod;
     bool lost;
+    bool duplicated;
+    string error;
 }

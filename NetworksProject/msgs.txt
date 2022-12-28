@@ -1,19 +1,16 @@
-1100 whatever whatever
-0001 no whatevers
-1001 no whatevers
-0001 no whatevers
-1001 haw haw haw naw
-0101 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
-0001 no whatevers
+0000 aaaa
+0000 b$bbb
+0000 ccc$$c
+0000 d/$ddd
+0000 $eeee$
+0000 aa
+0000 bb
+0000 cc
+0000 dd
+0000 ee
+0000 ta
+0000 tb
+0000 tc
+0000 fa
+0000 fb
+0000 fc

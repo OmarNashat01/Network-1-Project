@@ -19,6 +19,26 @@ using namespace std;
 
 Define_Module(Node0);
 
+void Node0::Printlog(int type, Message* mymsg){
+    logs << "At time: " << simTime()
+         << ", Node id: " << getIndex();
+    if (type == 0){
+        logs << ", [sent]"
+                << ", seq number= " << mymsg->getHeader()
+                << ", and payload= " << mymsg->getPayload()
+                << ", and trailer= " << bitset<8>(mymsg->getTrailer()).to_string()
+                << ", modified= " << -1 * mymsg->getMod()
+                << ", Lost= " << mymsg->getLost()
+                << ", Duplicate= " << (mymsg->getDuplicated() > 0)
+                << ", delay= " << (mymsg->getDelay() > 0) << endl;
+
+    }
+    else if (type == 1){
+        logs << ", [processing] Packet number: " << mymsg->getHeader() << ", Introducing channel error with code= " << mymsg->getError() << endl;
+    }
+
+}
+
 void Node0::initialize()
 {
     // TODO - Generated method body
@@ -26,80 +46,135 @@ void Node0::initialize()
 
     filenames[1] = "../msgs.txt";
 
+    sendWindow.inFile.open(filenames[getIndex()], ifstream::in);
+
+    logs.open("Logs.txt", ofstream::out);
+
     frame_expected = 0;
+
+    for (int i = 0; i < MAX_SEQ; i++){
+        timers[i].setFrame_type(timeout);
+        timers[i].setAck_nr(i);
+    }
 }
+
 
 void Node0::handleMessage(cMessage *msg)
 {
-    if (msg->isSelfMessage())
-    {
-        Message *mymsg = check_and_cast<Message *>(msg);
-        if (mymsg->getMod()){
-            string payload = mymsg->getPayload();
-            payload[payload.size()/2] = char((bitset<8>(8) ^ bitset<8>(payload[payload.size()/2])).to_ulong());
-            mymsg->setPayload(payload.c_str());
-        }
-
-        if (!mymsg->getLost())
-            sendDelayed(mymsg, mymsg->getDelay(), "out");
-
-        return;
-    }
     Message *mymsg = check_and_cast<Message *>(msg);
-
 
     int frame_type = mymsg->getFrame_type();
     double delay = 0.5; // processing delay
+
 
     // Handle received event
     switch (frame_type)
     {
         case intialization:
         {
-            cout << "nodeind: " << mymsg->getNodeInd() << ", getind: " << getIndex() << endl;
-            if (mymsg->getNodeInd() == getIndex()){             //detect the sending node
+
+            if (mymsg->getNodeInd() == getIndex()){  //detect the sending node
+
                 if (!sendWindow.openFile(filenames[mymsg->getNodeInd()]))
                     cout << "Can't read from file\n";
                 delay += mymsg->getStartTime();
             }
+            else
+                cancelAndDelete(mymsg);
             break;
         }
         case frame_arrival:
         {
-            // TODO: Implement
-            char parity = Window::calcParity(mymsg->getPayload());
+            Printlog(1,mymsg);
+            mymsg->setFrame_type(receiveProcessing);
 
-            mymsg->setDelay(1.0);
-            mymsg->setPayload("");
-            mymsg->setFrame_type(ack);
+            EV << "Frame arrived here at node: " << getIndex() << endl;
+            scheduleAt(simTime() + 0.5, mymsg);
 
-
-            if (mymsg->getHeader() != frame_expected){
-                mymsg->setFrame_type(nack);
-                mymsg->setName("Nack");
-            }
-            else
-                frame_expected = (frame_expected + 1) % MAX_SEQ;
-
-            mymsg->setAck_nr(frame_expected);
-
-            if (parity != mymsg->getTrailer()){
-                mymsg->setFrame_type(cksum_err);
-                mymsg->setName("Nack");
-            }
 
             break;
         }
-        case cksum_err:
+        case sendProcessing:
         {
-            //TODO: implement
+
+            if (mymsg->getMod()){
+                string payload = mymsg->getPayload();
+                payload[payload.size()/2] = char((bitset<8>(8) ^ bitset<8>(payload[payload.size()/2])).to_ulong());
+                mymsg->setPayload(payload.c_str());
+            }
+
+            Printlog(0, mymsg);
+
+            // Start Timer for timeout
+            if (sendWindow.Sender()){
+                EV << "starting timers at node: " << getIndex() << ", ack: " << mymsg->getHeader() << endl;
+                scheduleAt(simTime() + TO_DELAY, &timers[mymsg->getHeader()]);
+            }
+
+            if (mymsg->getAck_nr() == -1)
+                mymsg->setFrame_type(frame_arrival);
+            else
+                if (mymsg->getHeader() != mymsg->getAck_nr())
+                    mymsg->setFrame_type(nack);
+                else
+                    mymsg->setFrame_type(ack);
+
+            if (!mymsg->getLost())
+                sendDelayed(mymsg, mymsg->getDelay(), "out");
+            else
+                cancelAndDelete(mymsg);
+
+            break;
+        }
+        case receiveProcessing:
+        {
+            char parity = Window::calcParity(mymsg->getPayload());
+            mymsg->setDelay(1.0);
+            mymsg->setPayload("");
+            mymsg->setName("ack");
+            mymsg->setAck_nr(frame_expected);
+
+            if (mymsg->getHeader() != frame_expected)
+               mymsg->setName("Nack");
+            else
+               frame_expected = (frame_expected + 1) % MAX_SEQ;
+
+            if (parity != mymsg->getTrailer()){
+               mymsg->setFrame_type(cksum_err);
+               mymsg->setName("check sum error");
+            }
+            mymsg->setFrame_type(sendProcessing);
+            scheduleAt(simTime() + 0.5, mymsg);
+
             break;
         }
         case timeout:
         {
             // TODO: implement
+            sendWindow.TOFrame(mymsg->getAck_nr());
             break;
         }
+        case ack:
+        {
+            sendWindow.ackFrame(mymsg->getAck_nr());
+            EV << "stopping timers at node: " << getIndex() << ", ack: " << mymsg->getAck_nr() << endl;
+            cancelEvent(&timers[mymsg->getAck_nr()]);
+            break;
+        }
+        case cksum_err:
+        {
+            //TODO: implement
+            cancelAndDelete(mymsg);
+            break;
+        }
+
+        case nack:
+        {
+            EV << "debug: ind: " << getIndex() << ", frametype: " << mymsg->getFrame_type() << endl;
+            cancelAndDelete(mymsg);
+            break;
+        }
+
     }
 
 
@@ -109,19 +184,22 @@ void Node0::handleMessage(cMessage *msg)
 
 
 
+
     // Send messages if available
-    if (sendWindow.Sender())
-    {
-        int msgDelay;
-        Message * msgToSend = sendWindow.getMsg(msgDelay);
-        while (msgToSend){
-            mymsg->setDelay(mymsg->getDelay() + msgDelay);
-            scheduleAt(simTime() + delay, msgToSend);
-            msgToSend = sendWindow.getMsg(msgDelay);
-            delay += 0.5; // processing delay between each message
-        }
+    int msgDelay;
+    Message * msgToSend = sendWindow.getMsg(msgDelay);
+    while (msgToSend != NULL){
+        Printlog(1,msgToSend);
+
+        mymsg->setDelay(mymsg->getDelay() + msgDelay);
+        msgToSend->setName(msgToSend->getPayload());
+        msgToSend->setFrame_type(sendProcessing);
+        scheduleAt(simTime() + delay, msgToSend);
+        msgToSend = sendWindow.getMsg(msgDelay);
+        delay += 0.5; // processing delay between each message
+        if (msgToSend == NULL)
+            cancelAndDelete(mymsg);
     }
-    else
-        scheduleAt(simTime() + delay, mymsg);
+
 
 }

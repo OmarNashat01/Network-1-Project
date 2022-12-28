@@ -18,7 +18,7 @@
 #include "Message_m.h"
 
 
-#define MAX_SEQ 6
+#define MAX_SEQ 5
 #define DELAY_ERROR 4.0
 #define DUP_DELAY 0.1
 #define TO_DELAY 10
@@ -33,6 +33,9 @@ enum {
     network_layer_ready,
     ack,
     nack,
+    sendProcessing,
+    receiveProcessing,
+
 
 };
 
@@ -53,6 +56,7 @@ struct mesToSend // saved in sending window
     bool dup = 0;
     bool lost = 0;
     bool mod = 0;
+    string error= "";
 
     void set(mesToSend mes){
         if (isNone) {
@@ -72,7 +76,7 @@ struct mesToSend // saved in sending window
 class Window
 {
 protected:
-    ifstream inFile;
+    string filename;
     bool isSender = 0;
     int wStart = 0;
     int indToSend = 0;
@@ -80,15 +84,17 @@ protected:
     mesToSend buffer[MAX_SEQ];
 
 public:
+    ifstream inFile;
     bool Sender(){ return isSender;}
-    bool openFile(string filename){
-        inFile.open(filename);
+    bool openFile(string name){
+//        inFile.open(name, ifstream::in);
+        filename = name;
         isSender = 1;
         if (!inFile.is_open()) return 0;
         return 1;
     }
 
-    bool ackFrame(int ack){
+    bool inWindow(int ack){
         //because seq_nr is incremented circularly
         if (((wStart<=ack) && (ack<wEnd)) || ((wEnd<wStart) && (wStart<=ack)) || ((ack<wEnd) && (wEnd<wStart)))
             return true;
@@ -110,19 +116,24 @@ public:
     }
 
     bool readNext(){
+
         if (!canRead() || inFile.peek() == EOF)
             return 0;
-        cout << "only haw haw \n Filed slots: " << calcFilledSlots(wStart) << endl;
+
         string line; inFile >> line;
-        cout << "read line: " << line << endl;
+
+        buffer[wEnd].error = line;
 
         buffer[wEnd].lost = (line[Loss] == '1');
         buffer[wEnd].delay = (line[Delay] == '1') * DELAY_ERROR;
         buffer[wEnd].dup = (line[Duplication] == '1');
         buffer[wEnd].mod = (line[Modification] == '1');
 
-        getline(inFile, line, '\n');
+        inFile.ignore();
+        getline(inFile, line);
         buffer[wEnd].payload = line;
+
+
 
         wEnd = ( wEnd + 1) % MAX_SEQ;
         return 1;
@@ -157,13 +168,25 @@ public:
 
 
         msg->setHeader(indToSend); // packet number
+        msg->setAck_nr(-1); // packet number
         msg->setFrame_type(frame_arrival);
         msg->setPayload(payload.c_str());
         msg->setTrailer(calcParity(payload));
 
+        msg->setError(buffer[indToSend].error.c_str());
+
         delay = buffer[indToSend].delay + 1;
         indToSend = (indToSend + 1) % MAX_SEQ;
+
         return msg;
+    }
+    void ackFrame(int ack_nr){
+        if (inWindow(ack_nr))
+            wStart = (ack_nr + 1) % MAX_SEQ;
+    }
+    void TOFrame(int fr_nr){ //Time out
+        if (inWindow(fr_nr))
+            indToSend = fr_nr;
     }
 
 

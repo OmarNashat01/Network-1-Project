@@ -190,6 +190,7 @@ Message::Message(const char *name, short kind) : ::omnetpp::cPacket(name,kind)
     this->delay = 0;
     this->mod = false;
     this->lost = false;
+    this->duplicated = false;
 }
 
 Message::Message(const Message& other) : ::omnetpp::cPacket(other)
@@ -221,6 +222,8 @@ void Message::copy(const Message& other)
     this->delay = other.delay;
     this->mod = other.mod;
     this->lost = other.lost;
+    this->duplicated = other.duplicated;
+    this->error = other.error;
 }
 
 void Message::parsimPack(omnetpp::cCommBuffer *b) const
@@ -236,6 +239,8 @@ void Message::parsimPack(omnetpp::cCommBuffer *b) const
     doParsimPacking(b,this->delay);
     doParsimPacking(b,this->mod);
     doParsimPacking(b,this->lost);
+    doParsimPacking(b,this->duplicated);
+    doParsimPacking(b,this->error);
 }
 
 void Message::parsimUnpack(omnetpp::cCommBuffer *b)
@@ -251,6 +256,8 @@ void Message::parsimUnpack(omnetpp::cCommBuffer *b)
     doParsimUnpacking(b,this->delay);
     doParsimUnpacking(b,this->mod);
     doParsimUnpacking(b,this->lost);
+    doParsimUnpacking(b,this->duplicated);
+    doParsimUnpacking(b,this->error);
 }
 
 int Message::getNodeInd() const
@@ -353,6 +360,26 @@ void Message::setLost(bool lost)
     this->lost = lost;
 }
 
+bool Message::getDuplicated() const
+{
+    return this->duplicated;
+}
+
+void Message::setDuplicated(bool duplicated)
+{
+    this->duplicated = duplicated;
+}
+
+const char * Message::getError() const
+{
+    return this->error.c_str();
+}
+
+void Message::setError(const char * error)
+{
+    this->error = error;
+}
+
 class MessageDescriptor : public omnetpp::cClassDescriptor
 {
   private:
@@ -418,7 +445,7 @@ const char *MessageDescriptor::getProperty(const char *propertyname) const
 int MessageDescriptor::getFieldCount() const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
-    return basedesc ? 10+basedesc->getFieldCount() : 10;
+    return basedesc ? 12+basedesc->getFieldCount() : 12;
 }
 
 unsigned int MessageDescriptor::getFieldTypeFlags(int field) const
@@ -440,8 +467,10 @@ unsigned int MessageDescriptor::getFieldTypeFlags(int field) const
         FD_ISEDITABLE,
         FD_ISEDITABLE,
         FD_ISEDITABLE,
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
     };
-    return (field>=0 && field<10) ? fieldTypeFlags[field] : 0;
+    return (field>=0 && field<12) ? fieldTypeFlags[field] : 0;
 }
 
 const char *MessageDescriptor::getFieldName(int field) const
@@ -463,8 +492,10 @@ const char *MessageDescriptor::getFieldName(int field) const
         "delay",
         "mod",
         "lost",
+        "duplicated",
+        "error",
     };
-    return (field>=0 && field<10) ? fieldNames[field] : nullptr;
+    return (field>=0 && field<12) ? fieldNames[field] : nullptr;
 }
 
 int MessageDescriptor::findField(const char *fieldName) const
@@ -481,6 +512,8 @@ int MessageDescriptor::findField(const char *fieldName) const
     if (fieldName[0]=='d' && strcmp(fieldName, "delay")==0) return base+7;
     if (fieldName[0]=='m' && strcmp(fieldName, "mod")==0) return base+8;
     if (fieldName[0]=='l' && strcmp(fieldName, "lost")==0) return base+9;
+    if (fieldName[0]=='d' && strcmp(fieldName, "duplicated")==0) return base+10;
+    if (fieldName[0]=='e' && strcmp(fieldName, "error")==0) return base+11;
     return basedesc ? basedesc->findField(fieldName) : -1;
 }
 
@@ -503,8 +536,10 @@ const char *MessageDescriptor::getFieldTypeString(int field) const
         "double",
         "bool",
         "bool",
+        "bool",
+        "string",
     };
-    return (field>=0 && field<10) ? fieldTypeStrings[field] : nullptr;
+    return (field>=0 && field<12) ? fieldTypeStrings[field] : nullptr;
 }
 
 const char **MessageDescriptor::getFieldPropertyNames(int field) const
@@ -581,6 +616,8 @@ std::string MessageDescriptor::getFieldValueAsString(void *object, int field, in
         case 7: return double2string(pp->getDelay());
         case 8: return bool2string(pp->getMod());
         case 9: return bool2string(pp->getLost());
+        case 10: return bool2string(pp->getDuplicated());
+        case 11: return oppstring2string(pp->getError());
         default: return "";
     }
 }
@@ -605,6 +642,8 @@ bool MessageDescriptor::setFieldValueAsString(void *object, int field, int i, co
         case 7: pp->setDelay(string2double(value)); return true;
         case 8: pp->setMod(string2bool(value)); return true;
         case 9: pp->setLost(string2bool(value)); return true;
+        case 10: pp->setDuplicated(string2bool(value)); return true;
+        case 11: pp->setError((value)); return true;
         default: return false;
     }
 }

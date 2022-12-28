@@ -57,6 +57,7 @@ void Coordinator::initialize()
 
     Message *coordinator_msg1= coordinator_msg->dup();
     send(coordinator_msg1, "out1");
+
 }
 
 void Coordinator::handleMessage(cMessage *msg)
